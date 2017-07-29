@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>山东科技大学</title>
+		<link rel="stylesheet" href="css/others.css" />
+	</head>
+	<body>
+		<div class="head">
+			<div class="logo">
+				<img src="img/logo01.png" />
+			</div>
+			<div class="email">
+				<img src="img/ico-email.png" />
+				<span class="emailName">2529845648@qq.com</span>
+			</div>
+			<div class="mobile">
+				<img src="img/ico-mobile.png" />
+				<span class="mobileName">17854259107</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">网站介绍</a></li>
+					<li><a href="#">重点高校</a></li>					
+					<li><a href="#">本科高校</a>	</li>
+					<li><a href="#">专科高校</a></li>	
+					<li><a href="#">其它信息</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<script language =javascript > 
+                var curIndex=0; 				 
+				var timeInterval=3000; //时间间隔 单位毫秒
+				var arr=new Array(); 
+				arr[0]="img/shanke1.jpg";
+				arr[1]="img/shanke2.jpg";
+				arr[2]="img/shanke3.jpg"; 
+				setInterval(changeImg,timeInterval); 
+				function changeImg() 
+				{ 
+					var obj=document.getElementById("showpic"); 
+					if (curIndex==arr.length-1) 
+						curIndex=0; 
+					else 
+						curIndex+=1; 
+					obj.src=arr[curIndex]; 
+				} 
+				</script> 
+      			<img id="showpic" src="img/shanke1.jpg"/> 
+			</div>
+			<div class="details">
+				<p class="word01">大学百科>></p>
+				<p class="word02">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp山东科技大学是一所位于中国山东省青岛市的高等学校。其建校于1951年，现已发展成为一所以工为主，矿业见长，工学、理学、管理学、文学、法学、经济学、教育学等多学科相互渗透、协调发展、特色鲜明的省属重点大学。
+					学校在青岛、泰安、济南三地办学，总占地面积243万平方米，建筑面积135万平方米，固定资产总值15.66亿元、教学仪器设备总值3.31亿元。</p>
+				<p class="word03">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校有国家级特色专业7个，国家级综合改革试点专业1个，国家级人才培养模式创新实验区1个，
+					国家级精品视频公开课1门，国家级精品课程4门，国家级双语教学示范课程1门，国家级教学团队1个，国家级实验教学示范中心2个，国家级工程实践教育中心1个；
+					有省级“本科教学工程”建设项目89项。是国家“卓越工程师教育培养计划”和“大学生创新创业训练计划项目”实施高校。该校获国家级教学成果奖二等奖4项，省级教学成果奖70余项。
+					2007年，学校在教育部本科教学工作水平评估中被评为优秀等级。学校毕业生就业率保持在全省高校前列，已为社会培养了20余万名各类人才。</p>
+				<p class="word04"><a href="http://www.sdust.edu.cn/">大学官网直通车>></a></p>
+			</div>
+		</div>
+		<div class="foot">版权声明 2017.04</div>
+	</body>
+</html>

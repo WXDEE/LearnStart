@@ -1,0 +1,122 @@
+/* 开头注释掉的 */
+*{
+	margin:0; padding:0; list-style:none; text-decoration:none;
+}
+/* 注释掉图片的边框 */
+body{
+	background-color: #d3f3f9;
+}
+.head{
+	width: 100%;
+	min-width: 1000px;
+	height:71px;
+	background-color:#b2f0fb;
+    overflow: hidden;
+}
+.logo img{
+	height: 70px;
+	width: 200px;
+	float: left;
+	margin-left: 180px;
+	margin-right: 350px;
+}
+.mobile{
+	width:200px;
+    height:65px;
+    float: left;
+    margin-top:10px;
+}
+.mobileName{
+	margin-top:15px;
+    float:right;
+    margin-right:50px;	
+}
+.email{
+	width:220px;
+    height:65px;
+    margin-top:10px;
+    float:right;
+    margin-right: 180px;
+}
+.email img{
+	float: left;
+}
+.emailName{
+	margin-top:15px;
+    float:left;
+    margin-left:20px;
+}
+//////////////////////////////////////////////////////
+.content{
+	width: 100%;
+	min-width: 1000px;
+	overflow: hidden;
+}
+.navigation{
+	width: 1000px;
+	margin: auto;
+}
+.navigation>ul>li{
+	width:141px;
+    height:28px;
+    background-color:#29dafa;
+    padding-top:5px;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold; 
+    float:left;
+    border-left: 1px solid #FFFFFF;
+}
+.navigation a:hover{
+	text-decoration: underline ;
+	color: white;
+}
+////////////////////////
+.banner{}
+#showpic{
+	height: 380px;
+	width: 925px;
+	margin-left: 176px;
+	border-top: 6px solid #B2F0FB;
+	border-left: 34px solid #B2F0FB;
+	border-right: 34px solid #B2F0FB;
+	border-bottom: 18px solid #B2F0FB;
+}
+////////////////
+.details{
+	width: 925px;
+}
+.word01{
+	width: 924px;
+	height: 25px;
+	color: blue;	
+	font-family: "黑体";
+	font-size: 20px;
+	border-bottom: 2px solid black;
+	margin-left: 210px;
+	margin-top: 5px;
+}
+.details ul{
+	width: 924px;
+	height: 670px;
+	margin: auto;
+	border-bottom: 1px solid black;
+	margin-bottom: 100px;
+}
+.details img{
+	width: 295px;
+	height: 150px;
+	float: left;
+	margin-right:4px;
+	margin-left:4px ;
+	margin-top: 10px;
+	border: 2px solid #B2F0FB;
+	overflow: hidden;
+}
+.foot{
+	width: 100%;
+	height: 20px;
+	background-color: #B2F0FB;
+	text-align: center;
+	font-size: 14px;
+}

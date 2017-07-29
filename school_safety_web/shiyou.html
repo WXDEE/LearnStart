@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中国石油大学</title>
+		<link rel="stylesheet" href="css/others.css" />
+	</head>
+	<body>
+		<div class="head">
+			<div class="logo">
+				<img src="img/logo01.png" />
+			</div>
+			<div class="email">
+				<img src="img/ico-email.png" />
+				<span class="emailName">2529845648@qq.com</span>
+			</div>
+			<div class="mobile">
+				<img src="img/ico-mobile.png" />
+				<span class="mobileName">17854259107</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">网站介绍</a></li>
+					<li><a href="#">重点高校</a></li>					
+					<li><a href="#">本科高校</a>	</li>
+					<li><a href="#">专科高校</a></li>	
+					<li><a href="#">其它信息</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<script language =javascript > 
+                var curIndex=0; 				 
+				var timeInterval=3000; //时间间隔 单位毫秒
+				var arr=new Array(); 
+				arr[0]="img/shiyou1.jpeg";
+				arr[1]="img/shiyou2.jpeg";
+				arr[2]="img/shiyou3.jpg"; 
+				setInterval(changeImg,timeInterval); 
+				function changeImg() 
+				{ 
+					var obj=document.getElementById("showpic"); 
+					if (curIndex==arr.length-1) 
+						curIndex=0; 
+					else 
+						curIndex+=1; 
+					obj.src=arr[curIndex]; 
+				} 
+				</script> 
+      			<img id="showpic" src="img/shiyou1.jpeg"/> 
+			</div>
+			<div class="details">
+				<p class="word01">大学百科>></p>
+				<p class="word02">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中国石油大学是教育部直属全国重点大学，
+					是国家“211工程”重点建设和开展“优势学科创新平台”建设并建有研究生院的高校之一。
+					中国石油大学（华东）是教育部和五大能源企业集团公司、教育部和山东省人民政府共建的高校，
+					是石油、石化高层次人才培养的重要基地，被誉为“石油科技人才的摇篮”，现已成为一所以工为主、石油石化特色鲜明、多学科协调发展的大学。</p>
+				<p class="word03">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校拥有一支师德高尚、业务精湛、结构合理、充满活力的高素质教师队伍。现有教师1654人，其中教授、副教授932人，博士生导师167人。
+					专任教师中有两院院士7人，“千人计划”入选者、“长江学者”特聘教授和讲座教授、国家杰出青年基金获得者、国家“973计划”项目首席科学家9人，
+					国家“百千万人才工程”入选者8人；“新世纪优秀人才支持计划”入选者21人，中国青年科技奖获得者4人，教育部高校青年教师奖、
+					霍英东教育基金会青年教师资助及青年教师奖获得者10人；“泰山学者”攀登计划1人，“泰山学者”特聘教授及海外特聘专家8人，“山东省有突出贡献的中青年专家”13人。
+					国家级教学名师、省级教学名师15人，“全国模范教师”、“全国优秀教师”6人。 3个创新团队入选教育部“长江学者和创新团队发展计划”，
+					 2个创新团队入选 “山东省优秀创新团队”，1学科入选“山东省泰山学者优势特色学科人才团队支持计划”。</p>
+				<p class="word04"><a href="http://www.upc.edu.cn/">大学官网直通车>></a></p>
+			</div>
+		</div>
+		<div class="foot">版权声明 2017.04</div>
+	</body>
+</html>

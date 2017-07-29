@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中国海洋大学</title>
+		<link rel="stylesheet" href="css/others.css" />
+	</head>
+	<body>
+		<div class="head">
+			<div class="logo">
+				<img src="img/logo01.png" />
+			</div>
+			<div class="email">
+				<img src="img/ico-email.png" />
+				<span class="emailName">2529845648@qq.com</span>
+			</div>
+			<div class="mobile">
+				<img src="img/ico-mobile.png" />
+				<span class="mobileName">17854259107</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">网站介绍</a></li>
+					<li><a href="#">重点高校</a></li>					
+					<li><a href="#">本科高校</a>	</li>
+					<li><a href="#">专科高校</a></li>	
+					<li><a href="#">其它信息</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<script language =javascript > 
+                var curIndex=0; 				 
+				var timeInterval=3000; //时间间隔 单位毫秒
+				var arr=new Array(); 
+				arr[0]="img/haiyang1.jpg";
+				arr[1]="img/haiyang2.jpg";
+				arr[2]="img/haiyang3.jpg"; 
+				setInterval(changeImg,timeInterval); 
+				function changeImg() 
+				{ 
+					var obj=document.getElementById("showpic"); 
+					if (curIndex==arr.length-1) 
+						curIndex=0; 
+					else 
+						curIndex+=1; 
+					obj.src=arr[curIndex]; 
+				} 
+				</script> 
+      			<img id="showpic" src="img/haiyang1.jpg"/> 
+			</div>
+			<div class="details">
+				<p class="word01">大学百科>></p>
+				<p class="word02">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中国海洋大学（Ocean University of China）是一所以海洋和水产学科为特色，
+					包括理学、工学、农学、医（药）学、经济学、管理学、文学、法学、教育学、历史学等学科门类较为齐全的教育部直属重点综合性大学，
+					是国家“985 工程”和“211工程”重点建设高校之一，是国务院学位委员会首批批准的具有博士、硕士、学士学位授予权的单位。</p>
+				<p class="word03">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学校现有教职工2800余人，其中专任教师1530余人，博士生导师357人，45岁以下教师占教师总数约80%，
+					近90%的教师具有研究生学历，其中58%的教师具有博士学位，重点学科具有博士学位的教师比例达到 85%，教师中有一年以上在校外学习和研究经历的占教师总数的70%，
+					师资队伍的年龄结构、学历结构和学缘结构得到进一步优化，名列部属高校前茅。现有中国科学院院士3人、中国工程院院士5人，“千人计划”特聘教授4人，“长江学者”16人，
+					“青年千人计划”特聘教授1人，山东省“泰山学者”特聘教授17人，“筑峰人才工程”、“绿卡人才工程”、“繁荣人才工程”岗位教授15人，国家级有突出贡献的中青年专家 9 人，
+					973计划和重大科学研究计划项目首席科学家6人，国家自然科学基金委创新研究群体2个，国家杰出青年基金获得者 13人，享受国务院政府特殊津贴专家105人，
+					入选国家“百千万人才工程”一二层次9人，入选教育部创新团队2个，教育部新（跨）世纪人才89人，中国青年科学家奖1人。并有国家级教学团队4个：海洋无脊椎动物养殖学课程教学团队--王昭萍，
+					海洋化学课程教学团队--杨桂朋，细胞生物学教学团队--樊廷俊，海洋生物资源高效利用研究与开发--薛长湖。</p>
+				<p class="word04"><a href="http://www.ouc.edu.cn/">大学官网直通车>></a></p>
+			</div>
+		</div>
+		<div class="foot">版权声明 2017.04</div>
+	</body>
+</html>
