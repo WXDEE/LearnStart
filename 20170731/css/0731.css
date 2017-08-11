@@ -1,0 +1,142 @@
+@charset "utf-8";
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.head01{
+	width: 845px;
+	border-bottom: 3px solid #93a7bf;
+	margin: 0 auto;
+	color: #0070a4;
+	font-size: 12px;
+	margin-bottom: 14px;
+}
+.head02{
+	width: 845px;
+	border-bottom: 3px solid #93a7bf;
+	margin: 0 auto;
+	color: #0070a4;
+	font-size: 12px;
+	margin-bottom: 9px;
+}
+.head03{
+	width: 845px;
+	border-bottom: 3px solid #93a7bf;
+	margin: 0 auto;
+	color: #0070a4;
+	font-size: 12px;
+	margin-bottom: 90px;
+}
+.contain{
+	width: 827px;
+	margin: 0 auto;
+}
+.left01{
+	width: 347px;
+}
+.right01{
+	width: 347px;
+}
+.con_txt{
+	color: #010101;
+	font-size: 14px;
+	line-height: 32px;
+}
+.con01{
+	margin-bottom: 10px;
+}
+.middle{
+	margin-bottom: 10px;
+}
+.middle01{
+	margin-bottom: 20px;
+}
+.text{
+	width: 200px;
+	height: 30px;
+}
+.text01{
+	width: 680px;
+	height: 30px;
+}
+.text02{
+	width: 680px;
+	height: 60px;
+}
+.txt{
+	color: #010101;
+	font-size: 14px;
+	line-height: 30px;
+}
+.table{
+	 border: 1px solid #dddddd; 
+	 width: 685px;
+	 font-size: 12px;
+	 text-align: center;
+}
+.table .tr01{
+	 background-color: #e7e7e7;
+	 color: #363636;
+}
+.extra{
+	padding:9px 10px 9px 50px;
+}
+.tab{
+	margin-bottom: 30px;
+}
+.close{
+	color: #058ed4;
+	font-size: 12px;
+	margin-right: 40px;
+	line-height: 30px;
+}
+.button01{
+	width: 100px;
+	height: 30px;
+	background-color: #3dafe1;
+	margin-right: 16px;
+	border: 0;
+	color: #fff;
+}
+.button02{
+	width: 100px;
+	height: 30px;
+	background-color: #fe5200;
+	border: 0;
+	color: #fff;
+}
+
+/*作业二*/
+.work02{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.table02{
+	border: 1px solid #cbcdcc;
+	font-size: 12px;
+}
+.table02 .tr01{
+	border-bottom: 1px solid #b6cad1;
+}
+.table02 td{
+	padding-left: 12px;
+}
+.table03{
+	border: 1px solid #cbcdcc;
+	font-size: 12px;
+}
+.table03 .txt_01{
+	border-left: 1px dotted #bec2c5;
+}
+.box{
+	padding-left: 10px;
+}
+.txt_01{
+	padding-left: 5px;
+}
