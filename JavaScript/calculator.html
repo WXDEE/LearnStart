@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+		<style type="text/css">
+			.contain{
+				width: 414px;
+				padding: 10px 10px;
+				background-color: #00AB88;
+				margin: 0 auto;
+			}
+			.con {
+				position: relative;
+				width: 400px;
+				height: 200px;
+				border: 7px solid #5E677F;
+				background-color: #000000;
+				margin-bottom: 10px;
+			}
+			
+			.box {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 400px;
+				color: #FFFFFF;
+				text-align: right;
+				font-size: 60px;
+				line-height: 60px;
+				font-weight: 500;
+				word-break: break-all;
+				padding: 0 2px;
+			}
+			
+			.button {
+				width: 414px;
+			}
+			
+			.btn {
+				width: 130px;
+				height: 60px;
+				margin: 1px 2px;
+				font-size: 30px;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="con">
+				<div class="box" id="box">
+					0
+				</div>
+			</div>
+			<div class="button">
+				<input type="button" class="btn" value="0" />
+				<input type="button" class="btn" value="1" />
+				<input type="button" class="btn" value="2" />
+				<input type="button" class="btn" value="3" />
+				<input type="button" class="btn" value="4" />
+				<input type="button" class="btn" value="5" />
+				<input type="button" class="btn" value="6" />
+				<input type="button" class="btn" value="7" />
+				<input type="button" class="btn" value="8" />
+				<input type="button" class="btn" value="9" />
+				<input type="button" class="btn" value="." />
+				<input type="button" class="btn" value="退格" />
+			</div>
+	</body>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var oBox = document.getElementById("box");
+			var oBtn = document.getElementsByClassName("btn");
+			var temp = true;
+
+			for(var i = 0; i < oBtn.length; i++) {
+				oBtn[i].onclick = function() {
+					if(oBox.innerText.length > 15 && this.value != "退格") {
+						alert("已达到最大位数15");
+					} else {
+						if(oBox.innerText == '0') {
+							if(this.value == "退格") {
+								oBox.innerText = '0';
+							} else if(this.value == ".") {
+								oBox.innerText += this.value;
+							} else {
+								oBox.innerText = this.value;
+							}
+						} else if(this.value == "退格" && oBox.innerText != '0') {
+							oBox.innerText = oBox.innerText.slice(0, oBox.innerText.length - 1);
+							if(oBox.innerText == '') {
+								oBox.innerText = '0';
+							}
+						} else {
+							if(this.value == "." && oBox.innerText.indexOf('.') > 0) {
+								oBox.innerText += '';
+							} else {
+								oBox.innerText += this.value;
+							}
+						}
+					}
+
+				}
+			}
+		}
+	</script>
+
+</html>

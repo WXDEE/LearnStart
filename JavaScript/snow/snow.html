@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>雪花随机生成</title>
+		<style type="text/css">
+			.relative {
+				position: relative;
+			}
+			
+			.contain {
+				background: url(img/0816_bg.jpg) center top no-repeat;
+				height: 800px;
+				width: 100%;
+			}
+			
+			img {
+				position: absolute;
+				top: -30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="contain relative" id="contain">
+			<!--<img src="img/0816_snow1.png"/>-->
+		</div>
+
+		<script type="text/javascript">
+			var oCon = document.getElementById("contain");
+			var oImg = [];
+			var time = null,time_snow=null;
+			var i=0;
+			//生成雪花
+			function snow() {
+				oImg[i] = document.createElement("img");
+				oImg[i].src = "img/0816_snow" + parseInt(Math.random() * 5 + 1) + ".png"; //随机生成不同种类的雪花
+				oImg[i].height = parseInt(Math.random() * 25 + 10); //随机生成高度
+				oImg[i].width = oImg[i].height; //宽度=高度
+				oImg[i].style.left = parseInt(Math.random() * (oCon.clientWidth-oImg[i].width)) + "px";
+				oCon.appendChild(oImg[i]);
+				i++;
+			}
+			time_snow=setInterval(snow,300);
+			//移动雪花
+			function move() {
+				for(var i = 0; i < oImg.length; i++) {
+					oImg[i].style.top = oImg[i].offsetTop + 1 + 'px';
+					if(oImg[i].offsetTop >= oCon.offsetHeight-oImg[i].offsetHeight) {
+						oCon.removeChild(oImg[i]); //销毁超出屏幕的雪花
+					}
+				}
+			}
+			time = setInterval(move, 10);
+		</script>
+	</body>
+
+</html>

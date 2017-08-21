@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>王晓迪第四周周测</title>
+		<style type="text/css">
+			.contain {
+				width: 1062px;
+				padding: 20px;
+				border: 1px solid #DDDDDD;
+				margin: 50px auto;
+				line-height: 22px;
+				color: #4F6F7D;
+				font-size: 14px;
+				border-bottom: 9px solid #E7EFF1;
+				box-shadow: 1px 0px 10px #DDDDDD;
+			}
+			
+			.txt {
+				height: 20px;
+				padding: 6px 12px;
+				font-size: 14px;
+				color: #555;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				
+			}
+			/*WebKit和Blink（Safari,Google Chrome, Opera15+）使用伪元素*/			
+			input:-ms-input-placeholder{
+				color: #B0B0B0;
+			}
+			/*IE10+使用伪类 */
+			input::-webkit-input-placeholder{
+				color: #B0B0B0;
+			}
+			.btn {
+				padding: 6px 12px;
+				font-size: 14px;
+				font-weight: 400;
+				color: #fff;
+				border: 1px solid #46b8da;
+				border-radius: 4px;
+				background-color: #5bc0de;
+			}
+			
+			table {
+				width: 100%;
+				max-width: 100%;
+				border-top: 1px solid #ddd;
+				border-right: 1px solid #ddd;
+			}
+			
+			table tr th,
+			table tr td {
+				border-left: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				padding: 8px;
+			}
+			
+			table tr th {
+				border-bottom: 2px solid #ddd;
+				text-align: left;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #7698A7;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+				color: #4F6F7D;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="contain">
+			添加：
+			<input class="txt" type="text" placeholder="姓名" />
+			<input class="txt" type="text" placeholder="年龄" />
+			<input type="button" class="btn" value="添加" /> 变色：
+			<input type="button" class="btn" value="开启移入变色" /><br /><br />
+			<table cellspacing="0" id="table">
+				<tr>
+					<th>ID</th>
+					<th>姓名</th>
+					<th>年龄</th>
+					<th>操作</th>
+				</tr>
+				<tbody id="tbody">
+					<tr>
+						<td>1</td>
+						<td>张三</td>
+						<td>33</td>
+						<td>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>李四</td>
+						<td>34</td>
+						<td>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>王五</td>
+						<td>25</td>
+						<td>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>赵六</td>
+						<td>16</td>
+						<td>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>王四</td>
+						<td>44</td>
+						<td>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Danny</td>
+						<td>23</td>
+						<td>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table><br /> 搜索：
+			<input class="txt" type="text" placeholder="姓名" />
+			<input type="button" class="btn" value="搜索" /> 排序：
+			<input type="button" class="btn" value="年龄从小排序" /><br /><br /> 数组里存的是所有tr，排序的时候按照第三个单元格的innerHTML大小排序。最后按照新的顺序重新添加所有tr。
+		</div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var oTxt = document.getElementsByClassName("txt");
+				var oBtn = document.getElementsByClassName("btn");
+				var oBody=document.getElementById("tbody");
+				//点击按钮
+				for(var i = 0; i < oBtn.length; i++) {
+					oBtn[i].onclick = function() {
+						if(this.value == "添加") {
+							var oTr = document.getElementsByTagName("tr"); //已有的tr
+							var oNewtr = document.createElement("tr");
+							var oNewtd = document.createElement("td");
+							if(oTxt[0].value == '' || oTxt[1].value == '') {
+								alert("必须输入名字和年龄才能添加")
+							} else {
+								oNewtr.innerHTML = '<td>' + oTr.length + '</td>' + '<td>' + oTxt[0].value + '</td>' + '<td>' + oTxt[1].value + '</td>' + '<td><a href="#">删除</a></td>'
+								oBody.appendChild(oNewtr);
+							}
+						} else if(this.value == "开启移入变色" || this.value == "关闭移入变色") {
+							if(this.value == "开启移入变色") {
+								var oTr = document.getElementsByTagName("tr"); //已有的tr								
+								this.style.backgroundColor = "#d9534f";
+								this.style.borderColor = "#d43f3a";
+								for(var i = 1; i < oTr.length; i++) {
+									oTr[i].onmouseover = function() {
+										this.style.backgroundColor = "#E0E0E0"
+									}
+									oTr[i].onmouseout = function() {
+										this.style.backgroundColor = "#fff"
+									}
+								}
+								this.value = "关闭移入变色";
+								return;
+							}
+							if(this.value == "关闭移入变色") {
+								var oTr = document.getElementsByTagName("tr"); //已有的tr
+								this.style.backgroundColor = "#5bc0de";
+								this.style.borderColor = "#46b8da";
+								for(var i = 1; i < oTr.length; i++) {
+									oTr[i].onmouseover = function() {
+										this.style.backgroundColor = "#fff"
+									}
+								}
+								this.value = "开启移入变色";
+								return;
+							}
+						} else if(this.value == "搜索") {
+							var oTr = document.getElementsByTagName("tr"); //已有的tr
+							if(oTxt[2].value == '') {
+								alert("必须输入搜索内容")
+							} else {
+								for(var i = 1; i < oTr.length; i++) {
+									oTr[i].style.backgroundColor = "#fff";
+									if(oTr[i].children[1].innerText == oTxt[2].value) {
+										oTr[i].style.backgroundColor = "yellow";
+									}
+								}
+							}
+						} else if(this.value == "年龄从小排序") {
+							var oTr = document.getElementsByTagName("tr"); //已有的tr
+							for(var i = 1; i < oTr.length; i++) {
+								for(var j = i + 1; j < oTr.length; j++) {
+									if(oTr[i].children[2].innerText > oTr[j].children[2].innerText) {
+										var temp1 = oTr[i].innerHTML;
+										var temp2=oTr[i].style.backgroundColor
+										oTr[i].innerHTML = oTr[j].innerHTML;
+										oTr[i].style.backgroundColor=oTr[j].style.backgroundColor
+										oTr[j].innerHTML = temp1;
+										oTr[j].style.backgroundColor=temp2;
+									}
+								}
+							}
+						}
+					}
+				}
+				//点击删除
+				oBody.onclick = function() {
+					if(event.target.tagName == "A") {
+						this.removeChild(event.target.parentNode.parentNode);
+					}
+				}
+			}
+		</script>
+	</body>
+
+</html>
