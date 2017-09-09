@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*注册页*/
+body{
+	background-color: #fafafa;
+}
+.container {
+	width: 840px;
+	margin: 0 auto;
+}
+
+.top {
+	height: 60px;
+	padding-top: 30px;
+}
+
+.logo {
+	margin-left: 10px;
+}
+
+.title {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.register{
+	display: inline-block;
+	text-align: center;
+	height: 527px;
+	width: 840px;
+	padding-top: 50px;
+	margin-top: 40px;
+	background-color: white;
+}
+.reg-title{
+	font-size: 28px;
+	color: #000;
+}
+.reg-box{
+	height: 38px;
+	width: 342px;
+	display: inline-block;
+
+}
+
+.login-count{
+	height: 38px;
+	width: 303px;
+	padding-left: 35px !important;
+	outline: 0;
+	border: 1px solid #e8e8e8;
+}
+.reg-count{
+	height: 38px;
+	width: 193px;
+	padding-left: 35px !important;
+	outline: 0;
+	border: 1px solid #e8e8e8;
+}
+.icon{
+	display: inline-block;
+	background: url(../img/register-icon.png) no-repeat;
+}
+.icon-phone{
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	height: 16px;
+	width: 13px;
+	background-position: -31px -161px;
+}
+.icon-num{
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	height: 18px;
+	width: 17px;
+	background-position: 0 -195px;
+}
+.icon-anquan{
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	height: 16px;
+	width: 14px;
+	background-position: -45px -161px;
+}
+.icon-password{
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	height: 18px;
+	width: 14px;
+	background-position: -16px -160px;
+}
+.register-btn{
+	height: 42px;
+	width: 340px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	background-color: #d01818;
+	margin-top: 34px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+.agreement a{
+	color: #000;
+	
+}
+.agreement{
+	margin-top: 30px;
+}
+.reg-intro{
+	margin-top: 40px;
+	line-height: 24px;
+	text-align: center;
+}
+.reg-intro span{
+	color: #000000;
+}
+.reg-pic{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.reg-cod{
+	height: 38px;
+	width: 98px;
+	outline: 0;
+	border: 1px solid #e8e8e8;
+	background-color: white;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.reg-code{
+	position: absolute;
+	right: 2px;
+	top: 1px;
+}
+.Validform_wrong {
+	background: url(../img/plaint.jpg) #feffd0 5px center no-repeat;
+	color: #f30;
+	padding: 5px 0 8px 25px;
+	border: 1px solid #ff8e46;
+	display: block;
+	height: 12px;
+	width: 313px;
+	text-align: left;
+	margin-left: 1px;
+}
+.Validform_right {
+	color: #03fd55;
+	
+}

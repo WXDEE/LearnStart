@@ -1,0 +1,150 @@
+@charset "utf-8";
+.right1 {
+	margin-left: 10px;
+	width: 1000px;
+	margin-top: 20px;
+}
+
+.right_headbox {
+	border: 1px solid #ddd;
+	width: 998px;
+}
+
+.right_headbox .right_msg {
+	width: 969px;
+	padding: 0 15px;
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 2px solid #b01330;
+	position: relative;
+}
+
+.right_headbox .right_msg .tit {
+	color: #b01330;
+	font-size: 14px;
+}
+
+.right_headbox .right_msg1 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: #343434;
+}
+
+.right_headbox .tit1 {
+	width: 10px;
+	height: 14px;
+	position: absolute;
+	line-height: 14px;
+	display: inline-block;
+	background-image: url(../img-usercenter/user.png);
+	background-position: -333px -69px;
+top: 1px;
+left: 12px;
+}
+.right_msg1 span{
+	margin-left: 30px;
+}
+.cbn01{
+	color: #b01330;
+}
+.right1 .right_bottombox{
+	border: 1px solid #ddd;
+	height: 820px;
+	width: 1000px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	color: #333;
+}
+.right1 .right_bottombox .leftbox{
+	width: 200px;
+}
+.right1 .right_bottombox .leftbox .box{
+	width: 200px;
+	font-size: 13px;
+}
+.right1 .right_bottombox .leftbox .star{
+	color: #B01330;
+	font-size: 16px;
+}
+.right1 .right_bottombox .rightbox{
+	width: 600px;
+	padding-left: 20px;
+}
+.right1 .right_bottombox .rightbox .box{
+	width: 500px;
+	font-size: 13px;
+}
+.right1 .right_bottombox .rightbox .box .span{
+	color: #0E7DAA;
+	padding-left: 10px;
+}
+.right1 .right_bottombox .rightbox .box .btn{
+	padding-right: 10px;
+}
+.right1 .right_bottombox .rightbox .select1{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.right1 .right_bottombox .rightbox .select2{
+	position: absolute;
+	top: 0;
+	left: 70px;
+}
+.right1 .right_bottombox .rightbox .select3{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 140px;
+}
+.right1 .right_bottombox .rightbox .title{
+	z-index: 10;
+}
+.right1 .right_bottombox .right_pic{
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.right1 .right_bottombox .right_pic .msg{
+	color: #0E7DAA;
+	text-align: center;
+	padding-top: 10px;
+}
+.right1 .right_bottombox .icon_msg{
+	height: 30px;
+	width: 985px;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	background-color: #f3f3f3;
+	font-size: 14px;
+	padding-top: 13px;
+	padding-left: 15px;
+}
+.right1 .right_bottombox .bigbox{
+	height: 320px;
+}
+.right1 .right_bottombox .detail{
+	width: 960px;
+	padding: 20px 15px 60px;
+}
+.right1 .right_bottombox .detail .msg1{
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.right1 .right_bottombox .detail .bigbox2{
+	height: 330px;
+}
+.right1 .right_bottombox .bottom_btn{
+	background-color: #b01330;
+    border: 0;
+    color: #fff;
+    width: 88px;
+    height: 24px;
+    line-height: 24px;
+    top: 70px;
+margin-left: 220px;
+margin-top: 20px;
+}
