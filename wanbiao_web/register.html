@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="container clearfix">
+
+				<div class="logo fl">
+					<a href="index.html">
+					<img src="img/logo-ico.png" />
+					</a>
+				</div>
+				<div class="title fl">
+					<img src="img/logoname.png" />
+				</div>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="register">
+				<div class="reg-title">
+					注册万表会员
+				</div>
+				<form action="" method="post" id="reg-form">
+					
+					
+				
+				<ul>
+					<div>
+						<li class="reg-box" style="position: relative; margin-top: 40px;">
+							<input class="login-count" type="text" name="" id="" value="" placeholder="请输入手机号码" datatype="m" errormsg="请输入正确的手机号！" nullmsg="请输入手机号！"/>
+							<i class="icon icon-phone"></i>
+						</li>
+					</div>
+					<div>
+
+						<li class="reg-box" style="position: relative; margin-top: 15px;">
+							<input class="login-count" type="text" name="" id="" value="" placeholder="验证码" />
+							<i class="icon icon-num"></i>
+							<img class="reg-code" src="img/reg-code.png" />
+						</li>
+					</div>
+					<div>
+						<li class="reg-box" style="position: relative; margin-top: 15px; text-align: left;">
+							<input class="reg-count" type="text" name="" id="" value="" placeholder="请输入短信验证码" />
+							<i class="icon icon-anquan"></i>
+							<input class="reg-cod" type="button" title="获取验证码" id="" value="获取验证码" />
+						</li>
+					</div>
+					<div>
+						<li class="reg-box" style="position: relative; margin-top: 15px;">
+							<input class="login-count" type="password" name="paswrd" id="paswrd" value="" placeholder="请设置密码" datatype="*6-15" errormsg="密码范围在6~15位之间！" nullmsg="请输入密码！"/>
+							<i class="icon icon-password"></i>
+						</li>
+					</div>
+					<div>
+						<li class="reg-box" style="position: relative; margin-top: 15px;">
+							<input class="login-count" type="password" name="paswrd" id="" value="" placeholder="请再次输入密码" datatype="*6-15" recheck="paswrd"nullmsg="请再次输入密码！" errormsg="您两次输入的账号密码不一致！" />
+							<i class="icon icon-password"></i>
+						</li>
+					</div>
+					<div>
+						<li>
+							<input class="register-btn" type="submit" name="" id="" value="立即注册" />
+
+						</li>
+					</div>
+					<div class="agreement">
+						点击“立即注册”，即表示您同意并愿意遵守
+						<a href="https://www.wbiao.cn/help-722.html">万表网用户协议</a>
+					</div>
+				</ul>
+				</form>
+			</div>
+			<div class="reg-intro">
+				<span>万表网名表商城版权所有 2008-2016 ICP备案证书号：粤ICP备09108738号-2 网监备案：4401060103141 </span><br /> Copyright 2008-2016 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.
+			</div>
+			<div class="reg-pic">
+				<img src="img/gzaic.gif" />&nbsp;&nbsp;
+				<img src="img/eca01.jpg" />&nbsp;&nbsp;
+				<img src="img/cnnic_en.png" />&nbsp;&nbsp;
+				<img src="img/cert.png" />&nbsp;&nbsp;
+				<img src="img/wangxinrenzheng.png" />&nbsp;&nbsp;
+				<img src="img/wangluotousuozhongxin.jpg" />
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			//$(".registerform").Validform();  //就这一行代码！;
+
+			$("#reg-form").Validform({
+				tiptype: 4,
+				ajaxPost: true
+			});
+		})
+	</script>
+
+</html>

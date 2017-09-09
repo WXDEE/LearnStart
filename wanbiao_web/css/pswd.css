@@ -1,0 +1,83 @@
+@charset "utf-8";
+.pswd_right{
+	margin-left: 10px;
+		width: 1000px;
+}
+.pswd_head{
+	width: 1010px;
+	border: 1px solid #ddd;
+	margin-top: 20px;
+}
+.pswd_head .msg{
+	padding: 0 15px;
+	border-bottom: 2px solid #B01330;
+	color: #B01330;
+	font-size: 14px;
+	height: 34px;
+	line-height: 34px;
+}
+.pinkbox{
+	border: 1px solid #ffeda3;
+	background-color: #fffdee;
+	margin-top: 20px;
+	padding: 15px;
+	width: 980px;
+}
+.linebox{
+	padding: 0 30px;
+	margin-top: 10px;
+	width: 800px;
+	height: 30px;
+	font-size: 13px;
+}
+.linebox .left{
+	text-align: right;
+	width: 300px;
+}
+.linebox .left .star{
+	color: #d00000;
+	font-size: 16px;
+	margin-right: 2px;
+}
+.linebox .right{
+	width: 300px;
+	width: 150px;
+	height: 24px;
+margin-top: 0;
+}
+.pinkbox .strong{
+	height: 30px;
+	width: 180px;
+	margin-top: 10px;
+	margin-left: 345px;
+}
+.range{
+	background-color: #B01330;
+	color: white;
+	text-align: center;
+	width: 60px;
+	height: 20px;
+	padding-top: 5px;
+}
+.range1{
+	background-color: #d5d5d5;
+	color: #999;
+	text-align: center;
+	width: 60px;
+	height: 20px;
+	padding-top: 5px;
+}
+.pinkbox .submit_btn{
+	background-color: #b01330;
+    border: 0;
+    color: #fff;
+    width: 88px;
+    height: 24px;
+    line-height: 24px;
+    top: 70px;
+margin-left: 345px;
+margin-top: 20px;
+}
+.footer{
+	margin-top: 50px;
+}
