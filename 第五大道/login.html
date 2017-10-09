@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>第五大道登录-王晓迪</title>
+		<link rel="shotcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+	</head>
+
+	<body>
+		<!--我的订单-->
+		<div class="tab_top">
+			<a href="personal.html">
+				<div class="return"></div>
+			</a>
+			<div class="text"> 登录第五大道 </div>
+		</div>
+		<div class="login">
+			<div class="userName">
+				<input type="text" placeholder="请输入邮箱/手机号">
+			</div>
+			<div class="password relative">
+				<input type="password" visible placeholder="请输入密码">
+				<img class="unsee" src="img/other/login_pass.png" />
+				<img class="see" src="img/other/login_passee.png" />
+			</div>
+			<div class="btn">登录</div>
+			<div class="other clearfix">
+				<a class="fl" href="#">忘记密码?</a>
+				<a class="fr" href="register.html">用户注册</a>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			//登入页面
+			$("input").keyup(function() {
+				if($(".userName input").val() != '' && $(".password input").val() != '') {
+					$(".btn").css("background", "#bf9d60");
+				}else{
+					$(".btn").css("background", "#ccc");
+				}
+			})
+			//密码显示隐藏
+			$(".see").click(function () {
+				$(this).css("display","none");
+				$(".unsee").css("display","block");
+				$(".password input").prop("type","password");
+			})
+			$(".unsee").click(function () {
+				$(this).css("display","none");
+				$(".see").css("display","block");
+				$(".password input").prop("type","text");
+			})
+		})
+	</script>
+
+</html>

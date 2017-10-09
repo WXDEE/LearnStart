@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>第五大道收货地址-王晓迪</title>
+		<link rel="shotcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+	</head>
+
+	<body>
+		<!--我的订单-->
+		<div class="tab_top">
+			<a href="buynow.html">
+				<div class="return"></div>
+			</a>
+			<div class="text"> 收货地址 </div>
+		</div>
+		<div class="address">
+			<div class="adr_list active clearfix relative">
+				<div class="fl img"></div>
+				<div class="fl adr_txt">
+					<div class="adr_title clearfix">
+						<span class="fl">王晓迪</span>
+						<span class="fr">17854259107</span>
+					</div>
+					<div class="adr_con"> 
+						山东-青岛-城阳区-青岛农业大学
+					</div>
+				</div>
+				<div class="editor"> 编辑 </div>
+			</div>
+			<div class="adr_list clearfix relative">
+				<div class="fl img"></div>
+				<div class="fl adr_txt">
+					<div class="adr_title clearfix">
+						<span class="fl">王晓迪</span>
+						<span class="fr">17854259107</span>
+					</div>
+					<div class="adr_con"> 
+						山东-青岛-黄岛区-山东科技大学
+					</div>
+				</div>
+				<div class="editor"> 编辑 </div>
+			</div>
+		</div>
+		<div class="adr_btn">
+			<a href="add_adr.html"><span class="add_adr fl">新增地址</span></a>
+			<a href="buynow.html"><span class="ok_adr fr">确定</span></a>
+		</div>
+	</body>
+	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".adr_list").click(function () {
+				$(".adr_list").removeClass("active");
+				$(this).addClass("active");
+			})
+		})
+	</script>
+
+</html>

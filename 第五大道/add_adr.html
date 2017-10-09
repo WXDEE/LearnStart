@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>第五大道添加收货地址-王晓迪</title>
+		<link rel="shotcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+	</head>
+
+	<body>
+		<!--我的订单-->
+		<div class="tab_top">
+			<a href="address.html">
+				<div class="return"></div>
+			</a>
+			<div class="text"> 添加收货地址 </div>
+		</div>
+		<div class="addr_con">
+			<div class="default">
+				<span class="fl">设置为默认</span>
+				<span class="logo fr"></span>
+			</div>
+			<div class="addr_box">
+				<div class="box">
+					<span class="name">收货人</span>
+					<input class="detail" type="text" placeholder="请输入姓名">
+				</div>
+				<div class="box">
+					<span class="name">手机</span>
+					<input class="detail" type="text" placeholder="请输入手机号">
+				</div>
+			</div>
+			<div class="addr_box">
+				<div class="box">
+					<span class="name">所在区域</span>
+					<input class="detail" type="text" placeholder="省-市-区">
+				</div>
+				<div class="box">
+					<span class="name">邮编</span>
+					<input class="detail" type="text" placeholder="请输入邮编">
+				</div>
+				<div class="box">
+					<span class="name">详细地址</span>
+					<input class="detail" type="text" placeholder="请输入地址">
+				</div>
+			</div>
+		</div>
+		
+		<div class="adr_btn">
+			<span class="add_adr fl">保存地址</span>
+			<a href="address.html"><span class="ok_adr fr">确定</span></a>
+		</div>
+		<div class="adr_alert">
+			<div class="alert_box">
+				<div class="alt_title">成功保存！</div>
+				<div class="alt_ok">确定</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".add_adr").click(function () {
+				$(".adr_alert").css("display","block");
+			})
+			$(".alt_ok").click(function () {
+				$(".adr_alert").css("display","none");
+			})
+			$(".logo").click(function () {
+				if($(this).hasClass("active")){
+					$(this).removeClass("active");
+				}else{
+					$(this).addClass("active");
+				}
+			})
+		})
+	</script>
+
+</html>
