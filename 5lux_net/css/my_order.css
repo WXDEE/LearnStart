@@ -381,6 +381,48 @@ body{
     margin-left: 28.8%;
     margin-top: 10px;
 }
+/*确定要放弃支付吗？*/
+.cover_bg{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: none;
+    z-index: 8;
+}
+.cover_bg .exit{
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -135px;
+    margin-top: -52px;
+    width: 270px;
+    height: 104px;
+    background: #fff;
+    border-radius: 8px;
+    z-index: 5;
+}
+.cover_bg .exit .title{
+	height: 58px;
+	font-size: 17px;
+	text-align: center;
+	line-height: 59px;
+	color: #000000;
+}
+.cover_bg .exit .answer{
+	height: 45px;
+	font-size: 15px;
+    line-height: 45px;
+}
+.cover_bg .exit .answer span{
+	width: 49%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+    color: #9b885f;
+}
 
 /*//////////////////////////*/
 /*地址*/

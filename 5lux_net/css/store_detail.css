@@ -1,0 +1,213 @@
+@charset "utf-8";
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	clear: both;
+	content: "";
+	display: block;
+}
+.relative{
+	position: relative;
+}
+body{
+	width: 100%;
+    padding-bottom: 60px;
+}
+/*第五大道门店详情*/
+.tab_top {
+	top: 0;
+	left: 0;
+	height: 44px;
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	line-height: 44px;
+	border-bottom: 1px solid #ccc;
+	z-index: 2;
+}
+.tab_top .return {
+	width: 22px;
+	height: 22px;
+	background: url(../img/other/return.png) no-repeat;
+	background-size: 22px 22px;
+	position: absolute;
+	padding: 11px 15px;
+	background-position: 15px 11px;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.store_con{
+	padding-top: 45px;
+    background: #f2f2f2;
+}
+.store_con .store_banner{
+	position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.store_con .store_banner img{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.store_con .store_banner p{
+	position: absolute;
+	font-size: 16px;
+    width: calc(100% - 30px);
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    bottom: 0;
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,.4));
+}
+.store_con .store_inner{
+	padding: 30px 20px;
+    background: #fff;
+    font-size: 15px;
+}
+.store_con .store_inner p{
+	text-align: center;
+}
+.store_con .store_inner .city{
+	color: #666;
+    padding-bottom: 15px;
+}
+.store_con .store_inner .address{
+	color: #696969;
+    padding-bottom: 25px;
+}
+.store_con .store_inner .address .logo{
+	background: url(../img/other/store_logo.png) no-repeat;
+	display: inline-block;
+    width: 11px;
+    height: 14px;
+    background-size: 11px 14px;
+}
+.store_con .store_inner .map_phone{
+	text-align: center;
+}
+.store_con .store_inner .map_phone .mp01{
+	background: url(../img/other/store_mp01.png) no-repeat;
+    background-size: 40px 40px;
+    margin-right: 20px;
+}
+.store_con .store_inner .map_phone .mp02{
+	background: url(../img/other/store_mp02.png) no-repeat;
+    background-size: 40px 40px;
+    margin-left: 20px;
+}
+.store_con .store_inner .map_phone a{
+	display: inline-block;
+	width: 40px;
+    height: 40px;
+}
+.store_con .new_pro{
+	margin-top: 10px;
+}
+.store_con .new_pro .pro_title{
+	height: 35px;
+    background: #fff;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.store_con .new_pro .pro_title img{
+    height: 18px;
+    margin-top: 8px;
+}
+.store_con .new_pro ul{
+	width: 100%;
+	background: #fff;
+}
+.store_con .new_pro ul li{
+	width: 50%;
+	float: left;
+}
+.store_con .new_pro ul li:last-child{
+	padding-bottom: 60px;
+}
+.store_con .new_pro ul li .img{
+	width: 100%;
+}
+.store_con .new_pro ul li .img img{
+	width: 100%;
+}
+.store_con .new_pro li .txt{
+	margin: 10px 10px 20px;
+    text-align: center;
+    font-weight: 400;
+}
+.store_con .new_pro li .txt .pro_name{
+	font-size: 13px;
+    height: 13px;
+    color: #999;
+    padding-bottom: 7px;
+}
+.store_con .new_pro li .txt .pro_detail{
+    font-size: 13px;
+    height: 13px;
+    color: #333;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.store_con .new_pro li .txt .price{
+    height: 13px;
+    font-size: 13px;     
+    color: #9b885f;
+}
+.store_con .new_pro li .txt .price .oldprice{
+	color: #999;
+    text-decoration: line-through;
+}
+.store_btm{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 59px;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+.store_btm .btm_left{
+	display: inline-block;
+    text-align: center;
+    margin: 10px 30px 0;
+}
+.store_btm .btm_left{
+	width: 10%;
+}
+.store_btm .btm_left img{
+	display: block;
+	width: 24px;
+    height: 24px;   
+    margin: 0 auto; 
+}
+.store_btm .btm_left p{
+	font-size: 12px;
+    color: #666;
+    line-height: 20px;
+}
+.store_btm .btm_right{
+    width: 65%;
+    height: 40px;
+    background: #9b885f;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    text-align: center;
+}

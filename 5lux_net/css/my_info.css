@@ -1,0 +1,157 @@
+@charset "utf-8";
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	clear: both;
+	content: "";
+	display: block;
+}
+.relative{
+	position: relative;
+}
+body{
+	width: 100%;
+	overflow: hidden;
+}
+
+.info_bg{
+	background: url(../img/other/info_bg.png) no-repeat;
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-size: 100% 100%;	
+}
+.info_bg .contain{
+	width: 100%;
+    height: 100%;
+    background: hsla(0,0%,100%,.7);
+}
+.info_bg .contain .info_top{
+	height: 151px;
+    width: 100%;
+    position: relative;
+}
+.info_bg .contain .info_top .return{
+	background: url(../img/other/info_return.png) no-repeat;
+	width: 22px;
+    height: 22px;
+    background-size: 22px 22px;
+    position: absolute;
+    padding: 11px 15px;
+    background-position: 15px 11px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.info_bg .contain .info_top .logo{
+	background: url(../img/other/info_logo.png) no-repeat;
+	position: absolute;
+    bottom: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -40px;
+    overflow: hidden;
+    background-size: 80px 80px;
+}
+.info_bg .contain .info_btm{
+	position: absolute;
+    top: 151px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+.info_bg .contain .info_btm .info_mobile{
+	margin-bottom: 10px;
+	height: 45px;
+    background: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    line-height: 45px;
+    position: relative;
+}
+.info_bg .contain .info_btm .info_mobile .fl{
+	width: 56px;
+    margin-right: 14px;
+}
+.info_bg .contain .info_btm .info_mobile .fr{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 70px)
+}
+.info_bg .contain .info_btm .birth{
+	margin-bottom: 0;
+	border-bottom: 1px solid #e5e5e5;;
+}
+.info_bg .contain .info_btm .info_mobile .more{
+	height: 13px;
+    width: 7px;
+    background: url(../img/other/info_more1.png) no-repeat;
+    background-size: 7px 13px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+}
+.info_bg .contain .info_btm .outlogin{
+	height: 36px;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+}
+/*确定要退出登录吗*/
+.cover_bg{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: none;
+}
+.cover_bg .exit{
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -135px;
+    margin-top: -52px;
+    width: 270px;
+    height: 104px;
+    background: #fff;
+    border-radius: 8px;
+    z-index: 5;
+}
+.cover_bg .exit .title{
+	height: 58px;
+	font-size: 17px;
+	text-align: center;
+	line-height: 59px;
+	color: #000000;
+}
+.cover_bg .exit .answer{
+	height: 45px;
+	font-size: 15px;
+    line-height: 45px;
+}
+.cover_bg .exit .answer span{
+	width: 49%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+    color: #9b885f;
+}

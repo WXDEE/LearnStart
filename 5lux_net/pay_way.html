@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>第五大道注册-王晓迪</title>
+		<title>第五大道支付方式-王晓迪</title>
 		<link rel="shotcut icon" href="img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
@@ -13,9 +13,7 @@
 	<body>
 		<!--选择支付方式-->
 		<div class="tab_top">
-			<a href="unpaid_order.html">
-				<div class="return"></div>
-			</a>
+			<div class="return"></div>
 			<div class="text">选择支付方式 </div>
 		</div>
 		<div class="payWay">
@@ -59,6 +57,17 @@
 				<a href="#"><span class="ispay"> 确定 </span></a> 
 			</div>
 		</div>
+		<div class="cover_bg">
+			<div class="exit">
+				<div class="title">
+					确定要放弃支付吗？
+				</div>
+				<div class="answer">
+					<a href="unpaid_order.html"><span>伤心离开</span></a>
+					<span class="cancel">立即支付</span>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
@@ -66,6 +75,12 @@
 			$(".list").click(function () {
 				$(".list").removeClass("active");
 				$(this).addClass("active");
+			})
+			$(".return").click(function () {
+				$(".cover_bg").css("display","block");
+			})
+			$(".cancel").click(function () {
+				$(".cover_bg").css("display","none");
 			})
 		})
 	</script>

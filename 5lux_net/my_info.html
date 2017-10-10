@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>第五大道注册-王晓迪</title>
+		<link rel="shotcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_info.css" />
+	</head>
+
+	<body>
+		<div class="info_bg">
+			<div class="contain">
+				<div class="info_top">
+					<a href="personal.html"><div class="return"></div></a>
+					<div class="logo"></div>				
+				</div>
+				<div class="info_btm">
+					<div class="info_mobile phone clearfix">
+						<div class="fl">手机号</div>
+						<div class="fr">17854259107</div>					
+					</div>
+					<div class="info_mobile birth clearfix">
+						<div class="fl">生日</div>
+						<div class="fr">0000-00-00</div>
+						<div class="more"></div>
+					</div>
+					<div class="info_mobile sex clearfix">
+						<div class="fl">性别</div>
+						<div class="fr">女</div>
+						<div class="more"></div>
+					</div>
+					<div class="info_mobile address clearfix">
+						<div class="fl">收货地址</div>
+						<div class="fr">山东 青岛 城阳区 青岛农业大学</div>
+						<a href="address.html"><div class="more"></div></a>
+					</div>
+					<div class="outlogin"> 退出登录 </div>
+				</div>
+			</div>
+		</div>
+		<div class="cover_bg">
+			<div class="exit">
+				<div class="title">
+					确定要退出登录吗？
+				</div>
+				<div class="answer">
+					<a href="login.html"><span>确定</span></a>
+					<span class="cancel">取消</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".outlogin").click(function () {
+				$(".cover_bg").css("display","block");
+			})
+			$(".cancel").click(function () {
+				$(".cover_bg").css("display","none");
+			})
+		})
+	</script>
+
+</html>
