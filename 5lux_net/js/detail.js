@@ -36,6 +36,7 @@ $(function() {
 		numCount=parseInt($(this).siblings(".count_num").val());
 		numCount++;
 		$(this).siblings(".count_num").val(numCount);
+		$(this).parents(".am-popup-bd").find(".am_num").text(numCount);
 	})
 	$(".reduce").click(function () {
 		numCount=parseInt($(this).siblings(".count_num").val());
@@ -45,6 +46,7 @@ $(function() {
 			numCount=1;
 		}	
 		$(this).siblings(".count_num").val(numCount);
+		$(this).parents(".am-popup-bd").find(".am_num").text(numCount);
 	})
 
 })
