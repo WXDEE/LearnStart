@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>第五大道登录-王晓迪</title>
 		<link rel="shotcut icon" href="img/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
 		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
 	</head>
 
 	<body>
@@ -19,15 +20,20 @@
 			<div class="text"> 登录第五大道 </div>
 		</div>
 		<div class="login">
-			<div class="userName">
-				<input type="text" placeholder="请输入邮箱/手机号">
-			</div>
-			<div class="password relative">
-				<input type="password" visible placeholder="请输入密码">
-				<img class="unsee" src="img/other/login_pass.png" />
-				<img class="see" src="img/other/login_passee.png" />
-			</div>
-			<a href="personal.html"><div class="btn">登录</div></a>
+			<form action="" method="post" id="form">
+				<fieldset>
+					<div class="userName am-form-group ">
+						<input class="js-pattern-mobile" type="text" data-validation-message="账号格式不正确！" placeholder="请输入邮箱/手机号" required>
+					</div>
+					<div class="password relative am-form-group">
+						<input type="password" data-validation-message="密码格式不正确！" visible placeholder="请输入密码" required>
+						<img class="unsee" src="img/other/login_pass.png" />
+						<img class="see" src="img/other/login_passee.png" />
+					</div>
+					<button class="btn" type="submit">登录</button>
+				</fieldset>
+			</form>
+
 			<div class="other clearfix">
 				<a class="fl" href="#">忘记密码?</a>
 				<a class="fr" href="register.html">用户注册</a>
@@ -35,26 +41,57 @@
 		</div>
 	</body>
 	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/amazeui.min.js"></script>
 	<script type="text/javascript">
+		(function($) {
+			if($.AMUI && $.AMUI.validator) {
+				
+				// 增加单个正则
+				$.AMUI.validator.patterns.mobile = /(^1[0-9]{10}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/;
+			}
+		})(window.jQuery);
+		
+		
 		$(function() {
 			//登入页面
 			$("input").keyup(function() {
 				if($(".userName input").val() != '' && $(".password input").val() != '') {
 					$(".btn").css("background", "#bf9d60");
-				}else{
+				} else {
 					$(".btn").css("background", "#ccc");
 				}
 			})
 			//密码显示隐藏
-			$(".see").click(function () {
-				$(this).css("display","none");
-				$(".unsee").css("display","block");
-				$(".password input").prop("type","password");
+			$(".see").click(function() {
+				$(this).css("display", "none");
+				$(".unsee").css("display", "block");
+				$(".password input").prop("type", "password");
 			})
-			$(".unsee").click(function () {
-				$(this).css("display","none");
-				$(".see").css("display","block");
-				$(".password input").prop("type","text");
+			$(".unsee").click(function() {
+				$(this).css("display", "none");
+				$(".see").css("display", "block");
+				$(".password input").prop("type", "text");
+			})
+
+			//表单验证
+			$("#form").validator({
+				onValid: function(validity) {
+					$(validity.field).closest('.am-form-group').find('.am-alert').hide();
+				},
+				onInValid: function(validity) {
+					var $field = $(validity.field);
+					var $group = $field.closest('.am-form-group');
+					var $alert = $group.find('.am-alert')
+					// 使用自定义的提示信息 或 插件内置的提示信息
+					var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+					if(!$alert.length) {
+						$alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+						appendTo($group);
+					}
+
+					$alert.html(msg).show();
+				}
 			})
 		})
 	</script>

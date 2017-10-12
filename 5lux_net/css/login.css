@@ -1,0 +1,26 @@
+fieldset{
+	margin: 0;
+	padding: 0;
+}
+.tab_top .return{
+	padding: 16px 20px;
+}
+.am-form-group .am-alert{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background:transparent;
+	color: #f66;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.am-form-success .am-form-field:focus,
+.am-field-valid:focus,
+.am-field-error:focus, 
+.am-form-error .am-form-field:focus{
+	box-shadow: none !important;
+}
+.am-form-success .am-form-field,
+.am-field-valid {
+  border-color: #e5e5e5 !important;
+}
