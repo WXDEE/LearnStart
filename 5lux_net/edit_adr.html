@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>第五大道添加收货地址-王晓迪</title>
+		<link rel="shotcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+	</head>
+
+	<body>
+		<!--我的订单-->
+		<div class="tab_top">
+			<a href="javascript:history.back(-1)">
+				<div class="return"></div>
+			</a>
+			<div class="text"> 修改收货地址 </div>
+		</div>
+		<div class="addr_con">
+			<form id="form">
+				<div class="default">
+					<span class="fl">设置为默认</span>
+					<input id="isDefault" type="checkbox" class="fr" />
+				</div>
+				<div class="addr_box">
+					<div class="box">
+						<span class="name">收货人</span>
+						<input name="name" class="detail" type="text" value="王晓迪">
+					</div>
+					<div class="box">
+						<span class="name">手机</span>
+						<input name="tell" class="detail" type="text" value="17854259107">
+					</div>
+				</div>
+				<div class="addr_box">
+					<div class="box">
+						<span class="name">所在区域</span>
+						<!--<input name="city" class="detail" type="text" value="">-->
+						<select class="area" name="province">
+						</select>
+						<select class="area" name="city">
+						</select>
+						<select class="area" name="street">
+						</select>
+					</div>
+					<div class="box">
+						<span class="name">邮编</span>
+						<input id="code" name="code" class="detail" type="text" value="123456">
+					</div>
+					<div class="box">
+						<span class="name">详细地址</span>
+						<input name="street" class="detail" type="text" value="山东科技大学">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="adr_btn edit_adr">
+			<span id="savebtn" class="add_adr fl">修改地址</span>
+			<span id="deletebtn" class="ok_adr fr">删除地址</span>
+		</div>
+		<div class="adr_alert alert1">
+			<div class="alert_box">
+				<div class="alt_title">修改保存！</div>
+				<div class="alt_ok ok1">确定</div>
+			</div>
+		</div>
+		<div class="adr_alert alert2">
+			<div class="alert_box">
+				<div class="alt_title">删除成功！</div>
+				<div class="alt_ok ok2">确定</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new PCAS("province", "city", "street", "山东省", "青岛市", "黄岛区")
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			//修改收货地址
+			$(".add_adr").click(function() {
+				$(".alert1").css("display", "block");
+			})
+			$(".ok1").click(function() {
+				$(".alert1").css("display", "none");
+			})
+			//删除收货地址
+			$(".ok_adr").click(function() {
+				$(".alert2").css("display", "block");
+			})
+			$(".ok2").click(function() {
+				$(".alert2").css("display", "none");
+			})
+		})
+	</script>
+
+</html>

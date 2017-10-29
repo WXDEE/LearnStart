@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>第五大道注册-王晓迪</title>
+		<title>第五大道忘记密码-王晓迪</title>
 		<link rel="shotcut icon" href="img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="assets/css/amazeui.css" />
 		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
@@ -17,34 +17,29 @@
 			<a href="login.html">
 				<div class="return"></div>
 			</a>
-			<div class="text">用户注册</div>
+			<div class="text">忘记密码 </div>
 		</div>
 		<div class="login">
 			<form action="login.html" method="post" id="form">
 				<fieldset>
 					<div class="userName am-form-group">
-						<input class="js-pattern-mobile" type="text" placeholder="请输入邮箱/手机号" data-validation-message="账号格式不正确！" required>
-					</div>
-					<div class="password relative am-form-group">
-						<input id="password" data-validation-message="密码不能为空！" type="password" visible placeholder="请输入密码" required>
-						<img class="unsee" src="img/other/login_pass.png" />
-						<img class="see" src="img/other/login_passee.png" />
-					</div>
-					<div class="confirm am-form-group">
-						<input type="password" placeholder="请确认密码" data-equal-to="#password" data-validation-message="请与上面输入的值一致！" required>
+						<input id="account" name="userName" class="js-pattern-mobile" type="text" placeholder="请输入邮箱/手机号" data-validation-message="账号格式不正确！" required>
 					</div>
 					<div class="confirm_code relative am-form-group">
 						<input type="text" placeholder="请输入验证码" data-validation-message="验证码不能为空！" required>
 						<span class="txt">获取验证码</span>
 					</div>
-					<button class="btn" type="button">注册</button>
+					<div class="password relative am-form-group">
+						<input name="password" id="password" data-validation-message="再次确认新密码！" type="password" visible placeholder="请设置密码" required>
+						<img class="unsee" src="img/other/login_pass.png" />
+						<img class="see" src="img/other/login_passee.png" />
+					</div>
+					<div class="confirm am-form-group">
+						<input type="password" placeholder="请确认新密码" data-equal-to="#password" data-validation-message="两次输入的密码不匹配！" required>
+					</div>
+					<button class="btn" id="btn" type="button">确认</button>
 				</fieldset>
 			</form>
-
-			<div class="other clearfix">
-				点击注册,表示同意
-				<a href="#">《第五大道用户服务协议》</a>
-			</div>
 		</div>
 	</body>
 	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -94,10 +89,27 @@
 						$alert = $('<div class="am-alert am-alert-danger"></div>').hide().
 						appendTo($group);
 					}
-
 					$alert.html(msg).show();
 				}
 			})
+
+			$("#btn").click(function(event) {
+				// event.preventDefault
+				// 表单验证
+				var flag = $("form").validator("isFormValid"); //返回表单验证状态
+				if(flag) {
+					var data = $("form").serialize();
+//					$.post("/users/updatePass", data, function(result) {
+//						if(result.status) {
+//							alert(result.msg);
+//							location.href = "login.html";
+//						} else {
+//							alert(result.msg);
+//						}
+//					})
+				}
+			});
+
 		})
 	</script>
 

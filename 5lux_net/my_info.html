@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>第五大道注册-王晓迪</title>
 		<link rel="shotcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/my_info.css" />
 	</head>
@@ -24,43 +25,64 @@
 					</div>
 					<div class="info_mobile birth clearfix">
 						<div class="fl">生日</div>
-						<div class="fr">0000-00-00</div>
-						<div class="more"></div>
+						<input type="text" name="birth" class="fr" value="1995-09-28" data-am-datepicker="{theme: 'danger'}" readonly>
+						<span class="am-icon-calendar more1"></span>
 					</div>
 					<div class="info_mobile sex clearfix">
 						<div class="fl">性别</div>
-						<div class="fr">女</div>
-						<div class="more"></div>
+						<input type="radio" name="sex" checked value=''>男&nbsp;&nbsp;
+						<input type="radio" name="sex" value=''>女&nbsp;&nbsp;
+						<input type="radio" name="sex" value=''>保密
 					</div>
 					<div class="info_mobile address clearfix">
 						<div class="fl">收货地址</div>
-						<div class="fr">山东 青岛 城阳区 青岛农业大学</div>
+						<div class="fr">山东 青岛 黄岛区 山东科技大学</div>
 						<a href="address.html"><div class="more"></div></a>
 					</div>
+					<div class="save"> 保存 </div>
 					<div class="outlogin"> 退出登录 </div>
 				</div>
 			</div>
 		</div>
-		<div class="cover_bg">
+		<div class="cover_bg out_bg">
 			<div class="exit">
 				<div class="title">
 					确定要退出登录吗？
 				</div>
 				<div class="answer">
 					<a href="login.html"><span>确定</span></a>
-					<span class="cancel">取消</span>
+					<span class="cancel1">取消</span>
+				</div>
+			</div>
+		</div>
+		<div class="cover_bg save_bg">
+			<div class="exit">
+				<div class="title">
+					保存成功！
+				</div>
+				<div class="answer">
+					<span class="cancel2">确定</span>
 				</div>
 			</div>
 		</div>
 	</body>
 	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
+			//退出登录
 			$(".outlogin").click(function () {
-				$(".cover_bg").css("display","block");
+				$(".out_bg").css("display","block");
 			})
-			$(".cancel").click(function () {
-				$(".cover_bg").css("display","none");
+			$(".cancel1").click(function () {
+				$(".out_bg").css("display","none");
+			})
+			//保存
+			$(".save").click(function () {
+				$(".save_bg").css("display","block");
+			})
+			$(".cancel2").click(function () {
+				$(".save_bg").css("display","none");
 			})
 		})
 	</script>

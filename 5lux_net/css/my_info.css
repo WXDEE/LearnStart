@@ -40,17 +40,16 @@ body{
 .info_bg .contain .info_top .return{
 	background: url(../img/other/info_return.png) no-repeat;
 	width: 22px;
-    height: 22px;
+    height: 34px;
     background-size: 22px 22px;
     position: absolute;
-    padding: 11px 15px;
+    padding: 11px 25px;
     background-position: 15px 11px;
     left: 0;
     top: 0;
     z-index: 2;
 }
 .info_bg .contain .info_top .logo{
-	background: url(../img/other/info_logo.png) no-repeat;
 	position: absolute;
     bottom: 30px;
     width: 80px;
@@ -59,7 +58,10 @@ body{
     left: 50%;
     margin-left: -40px;
     overflow: hidden;
-    background-size: 80px 80px;
+}
+.info_bg .contain .info_top .logo img{
+    width: 100%;
+    height: 100%;
 }
 .info_bg .contain .info_btm{
 	position: absolute;
@@ -87,11 +89,22 @@ body{
 	white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: calc(100% - 70px)
+    width: calc(100% - 70px);
 }
 .info_bg .contain .info_btm .birth{
 	margin-bottom: 0;
 	border-bottom: 1px solid #e5e5e5;;
+}
+.info_bg .contain .info_btm .birth input{
+	border: none;
+	height: 100%;
+	outline: none;
+}
+.info_bg .contain .info_btm .sex input[type="radio"]{
+	border: none;
+	width: 6%;
+	margin-top: 15px;
+	margin-right: 0;
 }
 .info_bg .contain .info_btm .info_mobile .more{
 	height: 13px;
@@ -102,7 +115,25 @@ body{
     top: 16px;
     right: 15px;
 }
+.info_bg .contain .info_btm .info_mobile .more1{
+	position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 18px;
+}
 .info_bg .contain .info_btm .outlogin{
+	height: 36px;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+}
+.info_bg .contain .info_btm .save{
 	height: 36px;
     width: 270px;
     margin: 0 auto;
@@ -147,6 +178,7 @@ body{
 	height: 45px;
 	font-size: 15px;
     line-height: 45px;
+    border-top: 1px solid #F0F0F0;
 }
 .cover_bg .exit .answer span{
 	width: 49%;
@@ -154,4 +186,8 @@ body{
 	text-align: center;
 	display: inline-block;
     color: #9b885f;
+}
+.cover_bg .exit .answer .cancel2{
+	width: 100%;
+	
 }

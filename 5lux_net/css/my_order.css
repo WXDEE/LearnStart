@@ -620,3 +620,37 @@ body{
 	outline: none;
 	color: #999;
 }
+.addr_con .addr_box .box .area{
+	width: 25%;
+	height: 100%;
+	border: none;
+	outline: none;
+	color: #999;
+}
+/*修改checkbox样式*/
+
+.addr_con input[type=checkbox] {
+	position: relative;
+	background: transparent;
+	border: none;
+	width: 10px;
+	height: 1px;
+}
+
+.addr_con input[type=checkbox]::before {
+	content: '';
+	position: absolute;
+	right: 0;
+    top: 6px;
+	width: 51px;
+    height: 31px;
+	background-color: #fff;
+	background: url(../img/other/addr01.png) no-repeat;
+	background-size: 51px 31px;
+}
+
+.addr_con input[type=checkbox]:checked::before {
+	background: url(../img/other/addr02.png) no-repeat;
+	content: '';
+	background-size: 51px 31px;
+}

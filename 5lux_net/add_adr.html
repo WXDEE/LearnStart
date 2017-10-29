@@ -36,7 +36,13 @@
 			<div class="addr_box">
 				<div class="box">
 					<span class="name">所在区域</span>
-					<input class="detail" type="text" placeholder="省-市-区">
+					<!--<input class="detail" type="text" placeholder="省-市-区">-->
+					<select class="area" name="province">
+					</select>
+					<select class="area" name="city">
+					</select>
+					<select class="area" name="street">
+					</select>
 				</div>
 				<div class="box">
 					<span class="name">邮编</span>
@@ -48,7 +54,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="adr_btn">
 			<span class="add_adr fl">保存地址</span>
 			<a href="javascript:history.back(-1)"><span class="ok_adr fr">确定</span></a>
@@ -61,18 +67,22 @@
 		</div>
 	</body>
 	<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new PCAS("province", "city", "street", "北京市", "市辖区", "东城区")
+	</script>
 	<script type="text/javascript">
 		$(function() {
-			$(".add_adr").click(function () {
-				$(".adr_alert").css("display","block");
+			$(".add_adr").click(function() {
+				$(".adr_alert").css("display", "block");
 			})
-			$(".alt_ok").click(function () {
-				$(".adr_alert").css("display","none");
+			$(".alt_ok").click(function() {
+				$(".adr_alert").css("display", "none");
 			})
-			$(".logo").click(function () {
-				if($(this).hasClass("active")){
+			$(".logo").click(function() {
+				if($(this).hasClass("active")) {
 					$(this).removeClass("active");
-				}else{
+				} else {
 					$(this).addClass("active");
 				}
 			})
