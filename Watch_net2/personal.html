@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/user-center.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobileCSS.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="mobileJS.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personal.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/consignee_address.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--右侧悬浮栏-->
+		<div class="suspend">
+			<a class="clearfix" href="shopCar.html">
+				<div class="sus_left fl">
+					购物车
+				</div>
+				<div class="sus_right fl">
+					<i class="ikon_sus suspend01"></i>
+				</div>
+			</a>
+			<a class="clearfix" href="#">
+				<div class="sus_left fl">
+					建议有奖
+				</div>
+				<div class="sus_right fl">
+					<i class="ikon_sus suspend02"></i>
+				</div>
+			</a>
+			<a class="clearfix" href="#header_top">
+				<div class="sus_left fl">
+					返回顶部
+				</div>
+				<div class="sus_right fl">
+					<i class="ikon_sus suspend03"></i>
+				</div>
+			</a>
+		</div>
+	<div class="header" id="header_top">
+			<div class="top_contain relative">
+				<div class="container">
+					<ul class="clearfix">
+						<a href="#">
+							<li class="fr">English</li>
+						</a>
+						<a href="#">
+							<li class="fr">服务专线</li>
+						</a>
+						<a href="#">
+							<li class="fr">办理信用卡</li>
+						</a>
+						<a href="#">
+							<li class="fr">手机万表</li>
+						</a>
+						<a href="user-center.html">
+							<li class="fr">我的订单</li>
+						</a>
+						<a href="register.html">
+							<li class="fr">注册（即送50元）</li>
+						</a>
+						<a href="login.html">
+							<li class="fr">登录</li>
+						</a>
+					</ul>
+				</div>
+				<!--手机万表-->
+				<div class="phone_watch">
+					<div class="img">
+						<img src="mobile_img/head01.jpg" />
+					</div>
+					<div class="txt">
+						万表商城APP
+					</div>
+				</div>
+			</div>
+			<div class="mid_contain container clearfix">
+				<div class="fl">
+					<i class="ikon1 ikon_logo"></i>
+				</div>
+				<div class="fl">
+					<img src="mobile_img/149421866385797.gif" />
+				</div>
+				<a href="shopCar.html">
+					<div class="shop_car fr clearfix">
+						<div class="fl">
+							<a href="index.html">
+							<i class="ikon2 ikon_car"></i>
+							</a>
+						</div>
+						<div class="txt fl">
+							<a href="shopCar.html">购物车</a>
+						</div>
+					</div>
+				</a>
+				<div class="search fr clearfix relative">
+					<div class="fl">
+						<i class="ikon2 ikon_search"></i>
+					</div>
+					<input type="text" value="" placeholder="搜索 品牌/系列/型号" />
+					<button type="button">搜索</button>
+				</div>
+			</div>
+			<div class="bot_contain container clearfix relative">
+				<a href="index.html">
+					<div class="all_list fl">
+						<div class="fl">
+							<i class="ikon1 ikon_all"></i>
+						</div>
+						<div class="txt fl">
+							<a href="index.html">
+							&nbsp;&nbsp;&nbsp;&nbsp;首页
+							</a>
+						</div>
+					</div>
+				</a>
+				<ul class="fl clearfix">
+					<a href="shopping center.html">
+						<li class="fl">选表中心</li>
+					</a>
+					<a href="service.html">
+						<li class="fl">名匠维修</li>
+					</a>
+					<a href="world.html">
+						<li class="fl">全球购表</li>
+					</a>
+					<a href="6.flashPurchase.html">
+						<li class="fl">闪购特惠</li>
+					</a>
+					<a href="weal.html">
+						<li class="fl">会员福利</li>
+					</a>
+					<a href="#">
+						<li class="fl">线下体验</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+			
+		<div class="container">
+			
+			
+			
+			<!--头部-->
+			<div class="head" id="header_top">
+				<div class="msg box clearfix">
+					<div class="msg_border fl">
+						<a href="#">
+							<strong>首页</strong>
+						</a>
+					</div>
+					<div class="position fl">></div>
+					<a href="user_center.html">
+						<div class="head_my fl">我的万表</div>
+					</a>
+					<div class="position1 fl">></div>
+					<div class="my_order fl">个人资料</div>
+				</div>
+				<div class="line"></div>
+			</div>
+			<div class="bigbox clearfix">
+			<!--左边侧边栏-->
+			
+			<div class="left box fl">
+				<div class="mine"></div>
+				<div class="floor">
+					<div class="t clearfix">
+						<div class="pic fpic fl"></div>
+						<div class="msg fl"><b>交易管理</b></div>
+					</div>
+					<div class="c">
+						<ul>
+							<li>
+								<a href="my_order.html">
+									<span>我的订单</span></a>
+							</li>
+							<li>
+								<a href="#"><span>我的预售（0）</span></a>
+							</li>
+							<li>
+								<a href="consignee_address.html">
+									<span>收货地址</span></a>
+							</li>
+							<li>
+								<a href="#"><span>礼品卡</span></a>
+							</li>
+							<li>
+								<a href="#"><span>现金券/优惠券</span></a>
+							</li>
+							<li>
+								<a href="#"><span>中奖纪录</span></a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="floor">
+					<div class="t clearfix">
+						<div class="pic fpic1 fl"></div>
+						<div class="msg fl"><b>账户管理</b></div>
+					</div>
+					<div class="c">
+						<ul>
+							<li>
+								<a href="#">
+									<p class="now_page"><b>></b>&nbsp; <i>个人资料</i></p>
+								</a>
+							</li>
+							<li>
+								<a href="pswd.html"><span>修改密码</span></a>
+							</li>
+							<li>
+								<a href="#"><span>我的收藏</span></a>
+							</li>
+							<li>
+								<a href="#"><span>浏览历史</span></a>
+							</li>
+							<li>
+								<a href="#"><span>为我推荐</span></a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="floor">
+					<div class="t clearfix">
+						<div class="pic fpic2 fl"></div>
+						<div class="msg fl"><b>积分管理</b></div>
+					</div>
+					<div class="c">
+						<ul>
+							<li>
+								<a href="#"><span>我的积分</span></a>
+							</li>
+							<li>
+								<a href="#"><span>积分细则</span></a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="floor">
+					<div class="t clearfix">
+						<div class="pic fpic3 fl"></div>
+						<div class="msg fl"><b>消息管理</b></div>
+					</div>
+					<div class="c">
+						<ul>
+							<li>
+								<a href="#"><span>购买咨询</span></a>
+							</li>
+							<li>
+								<a href="#"><span>我的评论</span></a>
+							</li>
+							<li>
+								<a href="#"><span>我的投稿</span></a>
+							</li>
+							<li>
+								<a href="#"><span>我的消息</span></a>
+							</li>
+							<li>
+								<a href="#"><span>促销通知</span></a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="floor">
+					<div class="t clearfix">
+						<div class="pic fpic4 fl"></div>
+						<div class="msg fl"><b>万表会员</b></div>
+					</div>
+					<div class="c">
+						<ul>
+							<li>
+								<a href="#"><span>会员简介</span></a>
+							</li>
+							<li>
+								<a class="quit" href="#"><span>退出登录</span></a>
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!--右半部分-->
+			<div class="right1 fl">
+				<div class="right_headbox">
+					<div class="right_msg">
+						<b class="tit">个人资料</b>
+					</div>
+					<div class="right_msg1 relative">
+						<i class="tit1"></i>
+						<span>请完善您的个人信息，万表网会对您的个人资料隐私加以保密。(带
+						<font class="cbn01">*</font>
+						号的项目为必填项）</span>
+					</div>
+					<div class="right_msg1 relative">
+						<i class="tit1"></i>
+						<span>填写完整，并完成手机验证码验证后，立即赠送5000积分！
+						</span>
+					</div>
+				</div>
+				<!--下半部分-->
+				<div class="right_bottombox clearfix">
+					<div class="icon_msg"><b>基本信息</b></div>
+					<div class="bigbox">
+						<!--左边部分-->
+
+						<div class="leftbox fl clearfix">
+							<div class="box fl clearfix">
+								<div class="msg fr">会员账号：</div>
+
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fr">会员昵称：</div>
+								<div class="star fr">*</div>
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fr">性别：</div>
+								<div class="star fr">*</div>
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fr">手机号码：</div>
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fr">电子邮件：</div>
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fr">真实姓名：</div>
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fr">所在地：</div>
+							</div>
+						</div>
+						<!--右半部分-->
+						<div class="rightbox fl  clearfix">
+							<div class="box fl clearfix">
+								<div class="msg fl">wb170831130248061</div>
+								<span class="span fl">仅可修改一次</span>
+							</div>
+							<div class="box fl">
+								<input type="text" name="" id="" value="" datatype="s5-16" errormsg="请在范围内填写昵称！" />
+							</div>
+							<div class="box fl clearfix">
+								<div class="btn fl"><input type="radio" name="sex" id="" value="" checked /> 保密
+								</div>
+								<div class="btn fl"><input type="radio" name="sex" id="" value="" /> 男
+								</div>
+								<div class="btn fl"><input type="radio" name="sex" id="" value="" /> 女
+								</div>
+							</div>
+							<div class="box fl clearfix">
+								<div class="msg fl">15725282657</div>
+								<span class="span fl">修改</span>
+							</div>
+							<div class="box fl clearfix">
+								<span class="span fl">修改</span>
+							</div>
+							<div class="box fl">
+								<input type="text" name="" id="" value="" datatype="s2-4" errormsg="请输入真实姓名！" />
+							</div>
+							<div class="box fl relative">
+								<select class="select1">
+									<option title="0">请选择</option>
+									<option title="1">山东</option>
+									<option title="2">湖北</option>
+									<option title="3">青海</option>
+									<option title="4">河北</option>
+								</select>
+								<select class="select2 title" title="0">
+									<option>请选择</option>
+								</select>
+								<select class="select2" title="1">
+									<option>济南</option>
+									<option>烟台</option>
+									<option>威海</option>
+									<option>青岛</option>
+									<option>聊城</option>
+									<option>潍坊</option>
+								</select>
+								<select class="select2" title="2">
+									<option>武汉</option>
+									<option>黄冈</option>
+									<option>黄石</option>
+									<option>荆门</option>
+									<option>荆州</option>
+									<option>潜江</option>
+								</select>
+								<select class="select2" title="3">
+									<option>西宁</option>
+									<option>果洛</option>
+									<option>海北</option>
+									<option>海东</option>
+									<option>海南</option>
+									<option>海西</option>
+								</select>
+								<select class="select2" title="4">
+									<option>石家庄</option>
+									<option>保定</option>
+									<option>沧州</option>
+									<option>承德</option>
+									<option>衡水</option>
+									<option>秦皇岛</option>
+								</select>
+								<select class="select3" title="1">
+									<option>请选择</option>
+									<option>市中区</option>
+									<option>天桥区</option>
+									<option>历下区</option>
+									<option>历城区</option>
+									<option>槐荫区</option>
+								</select>
+								<select class="select3" title="2">
+									<option>请选择</option>
+									<option>江岸区</option>
+									<option>武昌区</option>
+									<option>江汉区</option>
+									<option>汉阳区</option>
+									<option>青山区</option>
+								</select>
+								<select class="select3" title="3">
+									<option>请选择</option>
+									<option>城中区</option>
+									<option>城东区</option>
+									<option>城西区</option>
+									<option>城北区</option>
+									<option>湟中区</option>
+								</select>
+								<select class="select3" title="4">
+									<option>请选择</option>
+									<option>长安区</option>
+									<option>桥东区</option>
+									<option>桥西区</option>
+									<option>新华区</option>
+									<option>高新区</option>
+								</select>
+							</div>
+
+						</div>
+						<!--右图片-->
+						<div class="right_pic fr">
+							<img src="img-usercenter/default.jpg" />
+							<div class="msg">[修改头像]</div>
+						</div>
+					</div>
+					<!--详细信息-->
+					<div class="detail">
+						<div class="msg1"><b>详细信息</b></div>
+						<!--左边-->
+						<div class="bigbox2">
+							<div class="leftbox fl clearfix">
+								<div class="box fl clearfix">
+									<div class="msg fr">生日：</div>
+
+								</div>
+								<div class="box fl clearfix">
+									<div class="msg fr">赠送手表对象：</div>
+									<div class="star fr">*</div>
+								</div>
+								<div class="box fl clearfix">
+									<div class="msg fr">获知万表网的途径：</div>
+									<div class="star fr">*</div>
+								</div>
+								<div class="box fl clearfix">
+									<div class="msg fr">年龄区间：</div>
+								</div>
+								<div class="box fl clearfix">
+									<div class="msg fr">喜欢表款：</div>
+								</div>
+								<div class="box fl clearfix">
+									<div class="msg fr">购买原因：</div>
+								</div>
+								<div class="box fl clearfix">
+									<div class="msg fr">兴趣爱好：</div>
+								</div>
+							</div>
+							<!--右边-->
+							<div class="rightbox fl  clearfix">
+								<div class="box fl clearfix">
+									<select>
+										<option>--</option>
+										<option>1994</option>
+										<option>1995</option>
+										<option>1996</option>
+									</select>年
+									<select>
+										<option>--</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+									</select>月
+									<select>
+										<option>--</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+									</select>日
+									<label>（*生日只能填写一次，之后不能修改）</label>
+								</div>
+								<div class="box fl">
+									<select>
+										<option>--</option>
+										<option>本人</option>
+										<option>家人</option>
+										<option>朋友</option>
+										<option>客户</option>
+									</select>
+								</div>
+								<div class="box fl clearfix">
+									<select>
+										<option>--</option>
+										<option>其他</option>
+										<option>网络搜索</option>
+										<option>朋友推荐</option>
+										<option>广告活动</option>
+										<option>杂志媒体</option>
+									</select>
+								</div>
+								<div class="box fl clearfix">
+									<select>
+										<option>--</option>
+										<option>25岁以下</option>
+										<option>30-40岁</option>
+										<option>40-50岁</option>
+										<option>50-60岁</option>
+										<option>60岁以上</option>
+									</select>
+								</div>
+								<div class="box fl clearfix">
+									<input type="checkbox" name="" id="" value="" />商务
+									<input type="checkbox" name="" id="" value="" />正装
+									<input type="checkbox" name="" id="" value="" />休闲
+									<input type="checkbox" name="" id="" value="" />运动
+									<input type="checkbox" name="" id="" value="" />时尚
+								</div>
+								<div class="box fl clearfix">
+									<input type="checkbox" name="" id="" value="" />自用
+									<input type="checkbox" name="" id="" value="" />伴侣使用
+									<input type="checkbox" name="" id="" value="" />朋友
+									<input type="checkbox" name="" id="" value="" />家人
+									<input type="checkbox" name="" id="" value="" />商务送礼
+									<input type="checkbox" name="" id="" value="" />收藏
+									<input type="checkbox" name="" id="" value="" />活动礼品
+								</div>
+								<div class="box fl clearfix">
+									<input type="checkbox" name="" id="" value="" checked/>其他
+									<input type="checkbox" name="" id="" value="" />旅游
+									<input type="checkbox" name="" id="" value="" />阅读
+									<input type="checkbox" name="" id="" value="" />美食
+									<input type="checkbox" name="" id="" value="" />养生
+									<input type="checkbox" name="" id="" value="" />收藏 </div>
+							</div>
+						</div>
+						<input class="bottom_btn" type="button" name="" id="" value="提交" />
+					</div>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer">
+			<div class="red_line">
+				<div class="container clearfix">
+					<a href="#">
+						<i class="ikon_red red01"></i> 正品保障
+					</a>
+					<a href="#">
+						<i class="ikon_red red02"></i> 免息分期
+					</a>
+					<a href="#">
+						<i class="ikon_red red03"></i> 全球联保
+					</a>
+					<a href="#">
+						<i class="ikon_red red04"></i> 假一赔三
+					</a>
+					<a href="#">
+						<i class="ikon_red red05"></i> 终身售后
+					</a>
+				</div>
+			</div>
+			<div class="foot_mid container clearfix">
+				<div class="con_left fl">
+					<p class="p1">客服电话</p>
+					<p class="p2">400-883-2688</p>
+					<p class="p3">外呼号码 020-83931899</p>
+					<p class="p4">
+						<a href="#">选购咨询</a>
+						<a href="#">售后咨询</a>
+					</p>
+				</div>
+				<div class="con_mid fl clearfix">
+					<dl>
+						<dt>新手</dt>
+						<dd>
+							<a href="#">注册新会员</a>
+							<a href="#">如何订购</a>
+							<a href="#">正品保障</a>
+							<a href="#">常见手表问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付</dt>
+						<dd>
+							<a href="#">支付方式</a>
+							<a href="#">分期付款</a>
+							<a href="#">发票说明</a>
+							<a href="#">支付问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送</dt>
+						<dd>
+							<a href="#">包裹签收</a>
+							<a href="#">配送方式</a>
+							<a href="#">配送说明</a>
+							<a href="#">自提流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>保障</dt>
+						<dd>
+							<a href="#">服务承诺</a>
+							<a href="#">价格保护</a>
+							<a href="#">七天退换说明</a>
+							<a href="#">保修说明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>帮助</dt>
+						<dd>
+							<a href="#">商务合作</a>
+							<a href="#">分销加盟</a>
+							<a href="#">严正声明</a>
+							<a href="#">人才招聘</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="con_code fl code01">
+					<div class="code_head">
+						<ul class="clearfix">
+							<li class="code_in fl">万表官方微博</li>
+							<li class="fl">万表世界订阅号</li>
+						</ul>
+					</div>
+					<div class="code_img display">
+						<p class="p1"><img src="mobile_img/code01.png"/></p>
+						<p class="p2">关注领100元现金券</p>
+					</div>
+					<div class="code_img">
+						<p class="p1"><img src="mobile_img/code02.png"/></p>
+						<p class="p2">全球买表 国内保修</p>
+					</div>
+				</div>
+				<div class="con_code fl code02">
+					<div class="code_head">
+						<ul class="clearfix">
+							<li class="code_in fl">万表微信服务号</li>
+							<li class="fl">万表微信资讯号</li>
+						</ul>
+					</div>
+					<div class="code_img display">
+						<p class="p1"><img src="mobile_img/code03.png"/></p>
+						<p class="p2">每周推送打折促销活动信息</p>
+					</div>
+					<div class="code_img">
+						<p class="p1"><img src="mobile_img/code04.png"/></p>
+						<p class="p2">每日推送手表干货文章</p>
+					</div>
+				</div>
+			</div>
+			<div class="foot_bot">
+				<div class="bot01 container">
+					<a href="#">万表网app</a>
+					<a href="#">万表全球购</a>
+					<a href="#">网站联盟</a>
+					<a href="#">新款手表</a>
+					<a href="#">热销</a>
+					<a href="#">万表天猫旗舰店</a>
+					<a href="#">万表京东旗舰店</a>
+					<a href="#">手表资讯</a>
+					<a href="#">品牌大全</a>
+					<a href="#">关于我们></a>
+				</div>
+				<div class="bot02">
+					<p>万表网名表商城 版权所有 2008-2017&nbsp;ICP备案证书号:粤ICP备09108738号</a>&nbsp;网监备案:4401060103141</p>
+					<p>广州市万表科技股份有限公司 地址:广州市番禺区番禺大道北60-1号</p>
+					<p>Copyright 2008-2017 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.</p>
+				</div>
+				<div class="bot03">
+					<a href="#"><img src="mobile_img/foot_bot01.png"/></a>
+					<a href="#"><img src="mobile_img/foot_bot02.png"/></a>
+					<a href="#"><img src="mobile_img/foot_bot03.png"/></a>
+					<a href="#"><img src="mobile_img/foot_bot04.png"/></a>
+					<a href="#"><img src="mobile_img/foot_bot05.png"/></a>
+				</div>
+			</div>
+		</div>
+			
+	</body>
+
+</html>

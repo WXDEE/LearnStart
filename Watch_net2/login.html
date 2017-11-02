@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="container clearfix">
+
+				<div class="logo fl">
+					<a href="index.html">
+						<img src="img/logo-ico.png" />
+					</a>
+				</div>
+				<div class="title fl">
+					<img src="img/logoname.png" />
+				</div>
+			</div>
+
+		</div>
+		<div class="banner">
+			<div class="container clearfix">
+				<a href="index.html">
+					<div class="login-click fl">
+
+					</div>
+				</a>
+				<!--账号登录-->
+				<div class="login-box fl" id="box1">
+					<div class="wb-vip">
+						<span>万表会员</span>
+						<div class="fr clearfix">
+							<div class="login-phone fl">
+								<i class="icon icon-phone"></i>
+
+							</div>
+							<div class="phone-txt fl">
+								手机动态码登录
+							</div>
+
+						</div>
+					</div>
+					<!--用户名-->
+					<form class="login-list" action="" id="login-list1">
+
+						<ul>
+
+							<li style="position: relative; margin-top: 15px;">
+								<input class="login-count" type="text" name="count" id="" value="" placeholder="手机号码/会员名/邮箱" datatype="s" nullmsg="请输入用户名！" />
+								<i class="icon icon-count"></i>
+							</li>
+							<li style="position: relative; margin-top: 15px;">
+								<input class="login-count" type="password" name="password" id="" value="" placeholder="密码" datatype="s" sucmsg="" nullmsg="请输入密码！" />
+								<i class="icon icon-password"></i>
+							</li>
+							<li style="margin-top: 15px;">
+								<label>
+								<label>
+									<input type="checkbox" name="autologin" id="autologin" value="1">自动登录&nbsp;&nbsp;&nbsp;
+								</label>
+								<input type="checkbox" name="remember" id="remember" value="1" checked="checked">记住账户名
+								</label>
+							</li>
+							<li>
+								<input class="login" type="submit" name="" id="" value="立即登陆" />
+
+							</li>
+							<li class="login-register clearfix">
+								<a class="fl" href="register.html">
+									注册万表会员
+								</a>
+								<a class="fr" href="#">
+									忘记密码？
+								</a>
+							</li>
+							<li style="margin-top: 50px; position: absolute; bottom: 15px; left:44px">
+								使用合作网站登录万表网:
+								<div class="partner-pic clearfix">
+									<div class="pic-1 fl">
+										<i class="icon2 icon2-apliy"></i>
+									</div>
+									<a href="#">
+										<div class="pic-txt fl">
+											支付宝
+										</div>
+									</a>
+									<a href="#">
+										<div class="pic-1 fl">
+											<i class="icon2 icon2-qq"></i>
+										</div>
+										<div class="pic-txt fl">
+											QQ
+										</div>
+									</a>
+									<a href="#">
+										<div class="pic-1 fl">
+											<i class="icon2 icon2-weibo"></i>
+										</div>
+										<div class="pic-txt fl">
+											新浪微博
+										</div>
+									</a>
+									<a href="#">
+										<div class="pic-1 fl">
+											<i class="icon2 icon2-chat"></i>
+										</div>
+										<div class="pic-txt2 fl">
+											微信
+										</div>
+									</a>
+
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<!--手机号登录-->
+				<div class="login-box fl" id="box2" style="display: none;">
+					<div class="wb-vip">
+						<span>万表会员</span>
+						<div class="fr clearfix">
+							<div class="login-phone fl">
+								<i class="icon icon-man"></i>
+
+							</div>
+							<div class="phone-txt fl">
+								账号密码登陆
+							</div>
+
+						</div>
+					</div>
+					<!--手机号-->
+					<form class="login-list" action="" id="login-list2">
+
+						<ul>
+
+							<li class="reg-box" style="position: relative; margin-top: 15px;">
+								<input class="login-count" type="text" name="" id="" value="" placeholder="请输入手机号码" datatype="m" errormsg="请输入正确的手机号！" nullmsg="请输入用户名！" />
+								<i class="icon3 icon3-phone"></i>
+							</li>
+
+							<li class="reg-box" style="position: relative; margin-top: 15px;">
+								<input class="login-count" type="text" name="" id="" value="" placeholder="请输入图形验证码" />
+								<i class="icon3 icon3-num"></i>
+								<img class="reg-code" src="img/reg-code.png" />
+							</li>
+
+							<li class="reg-box" style="position: relative; margin-top: 15px; text-align: left;">
+								<input class="reg-count" type="text" name="" id="" value="" placeholder="请输入短信验证码" />
+								<i class="icon3 icon3-anquan"></i>
+								<input class="reg-cod" type="button" title="获取验证码" id="" value="发送验证码" />
+							</li>
+
+							<li>
+								<input class="login" type="submit" name="" id="" value="立即登陆" />
+
+							</li>
+							<li style="margin-top: 50px; position: absolute; bottom: 15px; left:44px">
+								使用合作网站登录万表网:
+								<div class="partner-pic clearfix">
+									<div class="pic-1 fl">
+										<i class="icon2 icon2-apliy"></i>
+									</div>
+									<div class="pic-txt fl">
+										支付宝
+									</div>
+
+									<div class="pic-1 fl">
+										<i class="icon2 icon2-qq"></i>
+									</div>
+									<div class="pic-txt fl">
+										QQ
+									</div>
+
+									<div class="pic-1 fl">
+										<i class="icon2 icon2-weibo"></i>
+									</div>
+									<div class="pic-txt fl">
+										新浪微博
+									</div>
+
+									<div class="pic-1 fl">
+										<i class="icon2 icon2-chat"></i>
+									</div>
+									<div class="pic-txt2 fl">
+										微信
+									</div>
+
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="container clearfix">
+
+				<div class="login-our fl">
+					<a href="#">关于我们</a>&nbsp;|&nbsp;
+					<a href="#">联系我们</a>&nbsp;|&nbsp;
+					<a href="#">人才招聘</a>&nbsp;|&nbsp;
+					<a href="#">商家入驻</a>&nbsp;|&nbsp;
+					<a href="#">友情链接</a>&nbsp;|&nbsp;
+					<a href="#">服务保障</a>&nbsp;|&nbsp;
+					<a href="#">天猫旗舰店</a>&nbsp;|&nbsp;
+					<a href="#">万表世界</a>
+				</div>
+				<div class="login-intro fl">
+					万表网名表商城版权所有 2008-2016 ICP备案证书号：粤ICP备09108738号-2 网监备案：4401060103141 Copyright 2008-2016 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.
+				</div>
+
+				<div class="login-app fr">
+					<img src="img/wbapp.jpg" />&nbsp;&nbsp;&nbsp;
+					<img src="img/dbgapp.jpg" />
+				</div>
+				<div class="partner fl">
+					<img src="img/gzaic.gif" />&nbsp;&nbsp;
+					<img src="img/eca01.jpg" />&nbsp;&nbsp;
+					<img src="img/cnnic_en.png" />&nbsp;&nbsp;
+					<img src="img/cert.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("document").ready(function() {
+			$(function() {
+				//$(".registerform").Validform();  //就这一行代码！;
+
+				$("#login-list1").Validform({
+					tiptype: 4,
+					ajaxPost: true
+				});
+				$("#login-list2").Validform({
+					tiptype: 4,
+					ajaxPost: true
+				});
+			});
+			var m = 0;
+			$(".phone-txt").click(function() {
+				m++
+				if(m % 2 === 1) {
+					$("#box1").css("display", "none");
+					$("#box2").css("display", "block");
+				} else {
+					$("#box2").css("display", "none");
+					$("#box1").css("display", "block");
+				}
+
+			})
+		})
+	</script>
+
+</html>

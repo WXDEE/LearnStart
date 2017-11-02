@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单确认</title>
+		<link rel="stylesheet" type="text/css" href="css/reset1.css" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+	
+	</head>
+
+	<body>
+		<div class="all">
+			<div class="hd container">
+				<div class="tw">
+					<!--head-->
+					<div class="tw1">
+						<ul>
+							<li class="ttx fr">
+								<a href="shopCar.html">去购物车结算</a>
+								<div class="line"></div>
+							</li>
+							<li class="ttx fr">
+								<a href="weal.html">会员中心</a>
+							</li>
+							<li class="ttx fr">
+								<a href="my_order.html">我的订单</a>
+								<div class="line"></div>
+							</li>
+							<li class="ttx fr">
+								<a href="#">全国服务电话<span>400-883-2688</span></a>
+								<div class="line"></div>
+							</li>
+							<li class="ttx fr">
+								<a href="#">你好！</a>
+								<a href=" login.html">请登录</a>
+								<a href="#">退出</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!--万表logo-->
+			<div class="wb container">
+				<div class="wb0 cl clearfix">
+					<div class="wbleft fl">
+						<a href="index.html"><img src="imgweal/logo-ico.jpg" /></a>
+						<img src="imgweal/logoname.jpg" />
+					</div>
+					<div class="lgr fr">
+						<ul>
+
+							<li class="vtd fl">
+								<h2><div class="cbn relative">
+									<h1 class="linet"></h1>
+								</div><a href="shopping center.html">选购商品</a></h2>
+							</li>
+							<li class="on fl">
+								<h2><div class="cbn relative">
+									<h1 class="linet"></h1>
+								</div><a href="form.html">提交订单</a></h2>
+							</li>
+							<li class="eol fl">
+								<h2><div class="cbn relative">
+									<h1 class="linet"></h1>
+								</div><a href="zf.html">支付订单</a></h2>
+							</li>
+							<li class="eel fl">
+								<h2><div class="cbn relative">
+								</div><a href="#">等待验收</a></h2></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+<!--
+			<div class="header" id="header_top">
+				<div class="bot_contain container clearfix relative">
+					<a href="index.html">
+						<div class="all_list fl">
+							<div class="fl">
+								<i class="ikon1 ikon_all"></i>
+							</div>
+							<div class="txt fl">
+								首页
+							</div>
+						</div>
+					</a>
+					<ul class="fl clearfix">
+						<a href="shopping center.html">
+							<li class="fl">选表中心</li>
+						</a>
+						<a href="service.html">
+							<li class="fl">名匠维修</li>
+						</a>
+						<a href="weal.html">
+							<li class="fl">全球购表</li>
+						</a>
+						<a href="6.flashPurchase.html">
+							<li class="fl">闪购特惠</li>
+						</a>
+						<a href="weal.html">
+							<li class="fl">会员福利</li>
+						</a>
+						<a href="#">
+							<li class="fl">线下体验</li>
+						</a>
+					</ul>
+				</div>
+			</div>-->
+			<!--填写收货信息-->
+			<div class="arc container">
+				<form name="order" method="post" id="list">
+					<div class="bx">
+						<div class="btt container">
+							<h2 class="h2">1).填写收货信息
+						<span><img src="imgweal/icons_03.png"/>我们将选用顺丰快递、EMS等最专业的快递</span>
+						</h2>
+						</div>
+						<div class="table-bg">
+							<div class="csnw cl">
+								<span>*</span>收货人:
+								<input type="text" id="name" class="kuang flj" placeholder="姓名全称" datatype="s2-10" errormsg="昵称至少2个字符,最多10个字符！" />
+							</div>
+							<div class="dst" id="eara">
+								<label for=""><span>*</span>地区:</label>
+								<select name="eara" class="slt">
+									<option value="0">省</option>
+									<option value="1">山东省</option>
+									<option value="2">浙江省</option>
+									<option value="3">青海省</option>
+									<option value="4">黑龙江省</option>
+									<option value="5">吉林省</option>
+									<option value="6">江苏省</option>
+									<option value="7">山西省</option>
+									<option value="8">上海市</option>
+									<option value="9">北京</option>
+									<option value="10">重庆</option>
+								</select>
+								<select name="" class="slt">
+									<option value="0">市</option>
+									<option value="1">德州市</option>
+									<option value="2">金华</option>
+									<option value="3">辽宁</option>
+									<option value="4">临汾</option>
+									<option value="5">朝阳区</option>
+									<option value="6">南京</option>
+								</select>
+								<select name="" class="slt">
+									<option value="0">区/县</option>
+									<option value="2">城阳</option>
+									<option value="3">市难</option>
+									<option value="4">崂山</option>
+									<option value="5">德诚区</option>
+									<option value="6">市中区</option>
+
+								</select>
+								<input type="text" name="" id="bm" value="" class="slt" placeholder="邮码（选填）" datatype="p" errormsg="需要六位数" />
+							</div>
+
+							<div class="sxc cl">
+								<div class="">
+									<span>*</span>详细地址：
+								<input type="text" id="xxadress" class="kuang flj" placeholder="请详细填写街道名、门牌号、楼层、房号等信息，方便快递及时送达"  datatype="s3-30" errormsg="请详细填写地址" /></th>
+								</div>
+						
+							</div>
+							<div class="ip cl">
+								<span class="kll">*</span>手机:
+								<input type="text" id="iphone" class="kuang flj" placeholder="请输入手机号码" datatype="m" errormsg="请输入正确的手机号码" />
+								</div>
+							<div class="ibtw">
+								<input type="checkbox" name="" id="" value="" class="btn" />
+								<span>如果您是送朋友，可点此另填接收短信通知的手机号，以保持惊喜哦</span>
+							</div>
+							<div class="ip cl">
+								<span class="kll">*</span>邮箱:
+								<input type="text" id="yx" class="kuang flj" placeholder="用来接收订单状态提醒邮件" datatype="e" errormsg="请输入的正确邮箱" />
+							</div>
+							<div class="swim">
+								<input type="submit" name="" id="adress" value="确认收货地址" class="si" title="请确认" />
+							</div>
+						</div>
+
+					</div>
+
+					<!--验证手机-->
+					<div class="bing" id="bdyz">
+						<div class="btt container">
+							<h2 class="h2">2).验证手机
+						<span>为了您的购物安全，请验证手机号码</span>
+						</h2>
+						</div>
+						<div class="yz-bg" >
+							<div class="ipp cl">
+								<span>手机:</span>
+								<input type="text" id="ip" class="kuang fg" placeholder="填写常用手机号码" datatype="m" errormsg="请输入正确的手机号码" />
+							</div>
+							<div class="txm cl relative">
+								<span>图形码:</span>
+								<input type="text" id="txm" class="kuang fgg" placeholder="请输入图形验证码" datatype="s0-4" errormsg="请输入正确的验证码" />
+								<img class="tp" src="imgweal/yz_fw00.png" />
+							</div>
+
+							<div class="zmy">
+								<span>验证码:</span>
+								<input type="text" class="zmk fga" name="" id="yzm" value="" />
+								<input type="button" class="btn-one" name="" id="" value="发送验证码" />
+							</div>
+							<div class="swim">
+								<input type="submit" name="" id="adress" value="提交验证" class="si" title="提交验证"/>
+							</div>
+
+						</div>
+					</div>
+				</form>
+				<!--确认商品清单-->
+				<div class="qlist container">
+					<div class="qbx">
+						<h2 class="q-text">3).确认商品清单</h2>
+					</div>
+					<div class="cartbox">
+						<table id="cartTable">
+							<thead>
+								<tr>
+									<th>
+										<label>
+								<input class="check-all check" type="checkbox">
+								&nbsp;&nbsp;全选
+							</label>
+									</th>
+									<th>商品</th>
+									<th>单价</th>
+									<th>数量</th>
+									<th>小计</th>
+								
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="on">
+									<td class="checkbox">
+										<input class="check-one check" type="checkbox">
+									</td>
+									<td class="goods">
+										<img src="imgweal/img1.jpg">
+										<span><a href="detail-2.html">瑞士迪沃斯（DAVOSA）-Diving潜水系列 Ternos Professional TT特勒斯 16155945 机械男表</a></span>
+									</td>
+									<td class="price">12000</td>
+									<td class="count">
+										<span class="reduce"></span>
+										<input class="count-input" type="text" value="1">
+										<span class="add">+</span>
+									</td>
+									<td class="subtotal">12000</td>
+									
+								</tr>
+								<tr class="on">
+									<td class="checkbox">
+										<input class="check-one check" type="checkbox">
+									</td>
+									<td class="goods">
+										<img src="imgweal/img2.jpg">
+										<span><a href="detail-2.html">LQP01 鳄鱼皮大竹节棕色米白线 真皮表带</a></span>
+									</td>
+									<td class="price">6699</td>
+									<td class="count">
+										<span class="reduce"></span>
+										<input class="count-input" type="text" value="1">
+										<span class="add">+</span>
+									</td>
+									<td class="subtotal">6699</td>
+									
+								</tr>
+								<tr class="on">
+									<td class="checkbox">
+										<input class="check-one check" type="checkbox">
+									</td>
+									<td class="goods">
+										<img src="imgweal/img3.jpg">
+										<span><a href="detail-2.html">JEAYOU柔软鳄鱼皮-新大竹节纹系列表带 </a></span>
+									</td>
+									<td class="price">3788</td>
+									<td class="count">
+										<span class="reduce"></span>
+										<input class="count-input" type="text" value="1">
+										<span class="add">+</span>
+									</td>
+									<td class="subtotal">3788</td>
+									
+								</tr>
+								<!--<tr class="on">
+									<td class="checkbox">
+										<input class="check-one check" type="checkbox">
+									</td>
+									<td class="goods">
+										<img src="imgweal/img7.jpg">
+										<span><a href="detail-2.html">法国总统夫人之选 法国优雅腕表品牌：赫柏林Michel Herbelin-Art Deco 巴黎时尚系列 17478/P59MA 女士石英表</a></span>
+									</td>
+									<td class="price">8999</td>
+									<td class="count">
+										<span class="reduce"></span>
+										<input class="count-input" type="text" value="1">
+										<span class="add">+</span>
+									</td>
+									<td class="subtotal">8999</td>
+									
+								</tr>-->
+
+							</tbody>
+						</table>
+						<div class="foot" id="foot">
+							<label class="fl select-all">
+					<input type="checkbox" class="check-all check">
+					&nbsp;&nbsp;全选
+				</label>
+							<a class="fl delete" id="deleteAll" href="###">删除</a>
+							<div class="fr closing" onclick="getTotal();">
+								<a href="zf.html">结 算</a>
+							</div>
+							<input type="hidden" id="cartTotalPrice">
+							<div class="fr total">
+								合计：￥<span id="priceTotal">0.00</span>
+							</div>
+							<div class="fr selected" id="selected">
+								已选商品
+								<span id="selectedTotal">0</span> 件
+								<!--<span class="arrow up">︽</span>
+								<span class="arrow down">︾</span>-->
+							</div>
+							<div class="selected-view">
+								<div id="selectedViewList" class="clearfix">
+									<div>
+										<img src="imgweal/img2.jpg">
+										<span class="del" index="0">取消</span>
+									</div>
+									<div>
+										<img src="imgweal/img2.jpg">
+										<span class="del" index="1">取消</span>
+									</div>
+									<div>
+										<img src="imgweal/img2.jpg">
+										<span class="del" index="2">取消</span>
+									</div>
+									<div>
+										<img src="imgweal/img2.jpg">
+										<span class="del" index="3">取消</span>
+									</div>
+								</div>
+								<span class="arrow">
+						◆<span>◆</span>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="topbx container">
+						<table class="table-top" border="0" cellspacing="" cellpadding="0">
+							<tr>
+								<th class="dt" rowspan="6">
+									<a href="#"><img src="imgweal/images/topbx_03.png" />
+									</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">新手指南</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">如何支付</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">物流配送</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">服务保障</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">帮助 中心</a>
+								</th>
+							</tr>
+							<tr>
+
+								<td class="textp">
+									<a href="#">★注册新会员</a>
+								</td>
+								<td class="textp">
+									<a href="#">★支付方式</a>
+								</td>
+								<td class="textp">
+									<a href="#">★正品保障</a>
+								</td>
+								<td class="textp">
+									<a href="#">★服务承诺</a>
+								</td>
+								<td class="textp">
+									<a href="#">★商务合作</a>
+								</td>
+							</tr>
+							<tr>
+
+								<td class="textp">
+									<a href="#">★如何订购</a>
+								</td>
+								<td class="textp">
+									<a href="#">★分期付款</a>
+								</td>
+								<td class="textp">
+									<a href="#">★发票说明</a>
+								</td>
+								<td class="textp">
+									<a href="#">★支付问题</a>
+								</td>
+								<td class="textp">
+									<a href="#">★分销加盟</a>
+								</td>
+							</tr>
+							<tr>
+
+								<td class="textp">
+									<a href="#">★包裹签收</a>
+								</td>
+								<td class="textp">
+									<a href="#">★配送方式</a>
+								</td>
+								<td class="textp">
+									<a href="#">★配送说明</a>
+								</td>
+								<td class="textp">
+									<a href="#">★自提流程</a>
+								</td>
+								<td class="textp">
+									<a href="#">★严正声明</a>
+								</td>
+							</tr>
+							<tr>
+
+								<td>
+									<a href="#">★服务承诺</a>
+								</td>
+								<td>
+									<a href="#">★价格保护</a>
+								</td>
+								<td>
+									<a href="#">★七天退换说明</a>
+								</td>
+								<td>
+									<a href="#">★保修说明</a>
+								</td>
+								<td>
+									<a href="#">★人才招聘</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+				<!--最后-->
+				<div class="footer relative">
+					<div class="foot_bot">
+						<div class="bot01">
+							<a href="#">万表网app</a>
+							<a href="#">万表全球购</a>
+							<a href="#">网站联盟</a>
+							<a href="#">新款手表</a>
+							<a href="#">热销</a>
+							<a href="#">万表天猫旗舰店</a>
+							<a href="#">万表京东旗舰店</a>
+							<a href="#">手表资讯</a>
+							<a href="#">品牌大全</a>
+							<a href="#">关于我们></a>
+						</div>
+						<div class="bot02">
+							<p>万表网名表商城 版权所有 2008-2017&nbsp;ICP备案证书号:粤ICP备09108738号</a>&nbsp;网监备案:4401060103141</p>
+							<p>广州市万表科技股份有限公司 地址:广州市番禺区番禺大道北60-1号</p>
+							<p>Copyright 2008-2017 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.</p>
+						</div>
+						<div class="bot03">
+							<a href="#"><img src="mobile_img/foot_bot01.png" /></a>
+							<a href="#"><img src="mobile_img/foot_bot02.png" /></a>
+							<a href="#"><img src="mobile_img/foot_bot03.png" /></a>
+							<a href="#"><img src="mobile_img/foot_bot04.png" /></a>
+							<a href="#"><img src="mobile_img/foot_bot05.png" /></a>
+						</div>
+					</div>
+				</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/yz.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gw.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#list").Validform({
+				ajaxPost: true,
+				tiptype: 3,
+
+			});
+			$("#list1").Validform({
+				ajaxPost: true,
+				tiptype: 3,
+
+			});
+		})
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$("#bdyz").Validform({
+				ajaxPost: true,
+				tiptype: 3,
+
+			});
+			$("#bdyz").Validform({
+				ajaxPost: true,
+				tiptype: 3,
+
+			});
+		})
+	</script>
+
+
+</html>

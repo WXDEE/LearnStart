@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>支付订单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset1.css" />
+		<link rel="stylesheet" type="text/css" href="css/zf.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="hd">
+				<div class="tw">
+					<!--head-->
+					<div class="tw1">
+						<ul>
+							<li class="ttx fr">
+								<a href="shopCar.html">去购物车结算</a>
+								<div class="line"></div>
+							</li>
+							<li class="ttx fr">
+								<a href="weal.html">会员中心</a>
+							</li>
+							<li class="ttx fr">
+								<a href="user-center.html">我的订单</a>
+								<div class="line"></div>
+							</li>
+							<li class="ttx fr">
+								<a href="#">全国服务电话<span>400-883-2688</span></a>
+								<div class="line"></div>
+							</li>
+							<li class="ttx fr">
+								<a href="#">你好！</a>
+								<a href="#">退出</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!--万表logo-->
+			<div class="wb">
+				<div class="wb0 cl clearfix">
+					<div class="wbleft fl">
+						<a href="index.html">
+							<img src="imgweal/logo-ico.jpg" />
+						</a>
+						<img src="imgweal/logoname.jpg" />
+					</div>
+					<div class="lgr fr ">
+						<ul>
+
+							<li class="vtd fl">
+								<h2><div class="cbn relative">
+									<h1 class="linet"></h1>
+								</div><a href="shopping center.html">选购商品</a></h2>
+							</li>
+							<li class="on fl">
+								<h2><div class="cbn relative">
+									<h1 class="linet"></h1>
+								</div><a href="form.html">提交订单</a></h2>
+							</li>
+							<li class="eol fl">
+								<h2><div class="cbn relative">
+									<h1 class="linet"></h1>
+								</div><a href="zf.html">支付订单</a></h2>
+							</li>
+							<li class="eel fl">
+								<h2><div class="cbn relative">
+								</div><a href="#">等待验收</a></h2></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--订单编号-->
+			<div class="ddh">
+				<div class="cjj">
+					<div class="arci">
+						<div class="psm">
+							<ul>
+								<li class="tatt">订单号：2017090213334<span>详情</span></li>
+								<li class="asm">需付款：<span id="sum">1730元&nbsp;&nbsp;&nbsp;<span class="time">剩余付款时间&nbsp;<span id="d"></span>3小时<span id="m"></span>6分钟<span id="s"></span>20秒<span id="ms"></span>
+								</span>&nbsp;&nbsp;&nbsp;超时订单自动取消</span</li>
+            				</ul>
+								
+						</div>
+            		</div>
+            		<!--支付帮助-->
+            		<div class="ycx">
+            			<div class="szs">
+            				<dt>一张卡金额不足？<a href="#">分多次支付></a></dt>
+            			</div>
+            			<div class="last">
+            				<dt>稍后将通过 <span>020-83931899</span>，致电您确认订单</dt>
+						</div>
+					</div>
+
+					<!--选择支付方式-->
+					<div class="fss relative">
+						<div class="">
+							3).选择支付方式
+						</div>
+						<span>0费率 无需网银 有卡即付</span>
+						<div class="bg-op">
+							<div class="tab1" id="tab1">
+								<div class="head-new">
+									<ul>
+										<li class="fl active">信用卡</li>
+										<li class="fl">储蓄卡</li>
+										<li class="fl">支付平台</li>
+										<li class="fl">货到付款</li>
+										<div class="clear"></div>
+									</ul>
+								</div>
+								<div class="body-lpo">
+									<ul>
+										<li>
+											<!--<input type="radio" name="bank" id="bank" value="" />
+								<img src="imgweal/100.gif" />-->
+											<table border="0" cellspacing="30" cellpadding="20">
+												<tr>
+													<th>
+														<h2>信用卡在线支付</h2></th>
+
+												</tr>
+												<tr class="jli bxm" style="height: 60px;">
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/13.gif" class="fl" />
+													</th>
+													<th>
+
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/83.gif" class="wwk fl" />
+
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/9.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/34.gif" class="fl" />
+													</th>
+												</tr>
+												<tr class="jli bxm" style="height: 60px;">
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/38.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/fq_pufa.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/fq_cgb.gif" class="fl" />
+													</th>
+												</tr>
+
+												<!--不分期-->
+												<tr class="bf">
+													<th>不分期：</th>
+												</tr>
+												<tr style="height: 60px;">
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/100.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/88.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/43.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/23.gif" class="fl" />
+													</th>
+												</tr>
+												<tr style="height: 60px;">
+													<th class="jli">
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/30.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/21.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/145.gif" class="fl" />
+													</th>
+												</tr>
+
+												<div class="clear">
+
+												</div>
+											</table>
+										</li>
+									</ul>
+									<!--储蓄卡-->
+									<ul>
+										<li>
+
+											<table border="0" cellspacing="30" cellpadding="20" class="relative">
+												<tr>
+													<th class="wth">
+														<h2>信用卡在线支付</h2>
+
+													</th>
+
+												</tr>
+												<tr class="jli">
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/9.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/83.gif" class="fl" />
+													</th>
+
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/34.gif" class="fl" />
+													</th>
+
+												</tr>
+												<tr>
+													<th class="jli">
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/88.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/54.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/38.gif" class="fl" />
+													</th>
+												</tr>
+												<tr>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/13.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/100.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/23.gif" class="fl" />
+													</th>
+
+												</tr>
+												<tr>
+													<th class="jli">
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/127.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/21.gif" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/43.gif" class="fl" />
+													</th>
+												</tr>
+
+												<div class="clear">
+
+												</div>
+											</table>
+
+										</li>
+									</ul>
+
+									<!--平台支付-->
+									<ul>
+										<li>
+											<table border="0" cellspacing="30" cellpadding="20">
+												<tr>
+													<th>
+														<h2>信用卡在线支付</h2></th>
+
+												</tr>
+												<tr class="jli">
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03.png" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-05.png" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-07.png" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-09.png" class="fl" />
+													</th>
+												</tr>
+												<tr>
+													<th class="jli">
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-15.png" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-16.png" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-17.png" class="fl" />
+													</th>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-18.png" class="fl" />
+													</th>
+												</tr>
+
+												<!--不分期-->
+
+												<tr>
+													<th>
+														<input type="radio" name="bank" id="bank" value="" class="btn fl" />
+														<img src="imgweal/12_03-24.png" class="fl" />
+													</th>
+
+												</tr>
+
+												<div class="clear">
+
+												</div>
+											</table>
+										</li>
+									</ul>
+									<ul class="mkfj" id="list">
+										<li>
+											<h2>确认收件人信息 <span class="span">我们将致电收件人最后确认&nbsp;&nbsp;</span></h2>
+										</li>
+
+										<li>
+											<div class="ddf">
+												<p><span>*</span>姓名：&nbsp;<input type="text" name="" id="" style="width: 190px; height: 24px; padding-left: 10px;" value="" placeholder="姓名全称" datatype="s2-10" errormsg="昵称至少2个字符,最多10个字符！" nullmsg="请填写收货人姓名！"/></p>
+
+											</div>
+
+										</li>
+										<li>
+											<div class="ddf">
+												<p><span>*</span>地区：
+													<select name=""style="width: 66px; height: 30px;">
+
+														<option value="0">省</option>
+														<option value="1">山东省</option>
+														<option value="2">浙江省</option>
+														<option value="3">青海省</option>
+														<option value="4">黑龙江省</option>
+														<option value="5">吉林省</option>
+														<option value="6">江苏省</option>
+														<option value="7">山西省</option>
+														<option value="8">上海市</option>
+														<option value="9">北京</option>
+														<option value="10">重庆</option>
+													</select>
+													<select name="" class="slt" style="width: 66px; height: 24px;">
+														<option value="0">市</option>
+														<option value="1">德州市</option>
+														<option value="2">金华</option>
+														<option value="3">辽宁</option>
+														<option value="4">临汾</option>
+														<option value="5">朝阳区</option>
+														<option value="6">南京</option>
+													</select>
+													<select name="" class="slt" style="width: 65px; height: 24px;">
+														<option value="0">区/县</option>
+														<option value="1">齐河县</option>
+														<option value="2">城阳</option>
+														<option value="3">市难</option>
+														<option value="4">崂山</option>
+														<option value="5">德诚区</option>
+														<option value="6">市中区</option>
+
+													</select>
+										</li>
+										<li>
+											<p class="pu">建议您先与
+												<a href="#">联系在线客服</a>确认收货地址是否在快递运送范围内</p>
+										</li>
+										<li>
+											<div class="ddf1">
+												<p><span>*</span>详细地址： <input type="text" name="" style="width: 190px; height: 24px; padding-left: 10px;" placeholder="请输入详细地址" datatype="s6-20" errormag="输入正确详细地址" nullmsg="请输入地址！"/></p>
+
+											</div>
+										</li>
+										<li>
+											<div class="ddfg">
+												<p><span>*</span>手机： <input type="text" name="" id="" style="width: 190px; height: 24px; padding-left: 10px;" value="" placeholder="请输入手机号码" datatype="m" errormsg="请输入正确的手机号码" nullmsg="请填写您的手机号码！"/></p>
+
+											</div>
+										</li>
+										<li>
+											<div class="qrxx">
+												确认信息
+											</div>
+										</li>
+									</ul>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--最后-->
+					<div class="topbx">
+						<table class="table-top" border="0" cellspacing="" cellpadding="0">
+							<tr>
+								<th class="dt" rowspan="6">
+									<a href="#"><img src="imgweal/images/topbx_03.png" /></a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">新手指南</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">如何支付</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">物流配送</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">服务保障</a>
+								</th>
+								<th class="texttp dt">
+									<a href="#">帮助 中心</a>
+								</th>
+							</tr>
+							<tr>
+
+								<td class="textp">
+									<a href="#">★注册新会员</a>
+								</td>
+								<td class="textp">
+									<a href="#">★支付方式</a>
+								</td>
+								<td class="textp">
+									<a href="#">★正品保障</a>
+								</td>
+								<td class="textp">
+									<a href="#">★服务承诺</a>
+								</td>
+								<td class="textp">
+									<a href="#">★商务合作</a>
+								</td>
+							</tr>
+							<tr>
+
+								<td class="textp">
+									<a href="#">★如何订购</a>
+								</td>
+								<td class="textp">
+									<a href="#">★分期付款</a>
+								</td>
+								<td class="textp">
+									<a href="#">★发票说明</a>
+								</td>
+								<td class="textp">
+									<a href="#">★支付问题</a>
+								</td>
+								<td class="textp">
+									<a href="#">★分销加盟</a>
+								</td>
+							</tr>
+							<tr>
+
+								<td class="textp">
+									<a href="#">★包裹签收</a>
+								</td>
+								<td class="textp">
+									<a href="#">★配送方式</a>
+								</td>
+								<td class="textp">
+									<a href="#">★配送说明</a>
+								</td>
+								<td class="textp">
+									<a href="#">★自提流程</a>
+								</td>
+								<td class="textp">
+									<a href="#">★严正声明</a>
+								</td>
+							</tr>
+							<tr>
+
+								<td>
+									<a href="#">★服务承诺</a>
+								</td>
+								<td>
+									<a href="#">★价格保护</a>
+								</td>
+								<td>
+									<a href="#">★七天退换说明</a>
+								</td>
+								<td>
+									<a href="#">★保修说明</a>
+								</td>
+								<td>
+									<a href="#">★人才招聘</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="foot_bot">
+						<div class="bot01 container">
+							<a href="#">万表网app</a>
+							<a href="#">万表全球购</a>
+							<a href="#">网站联盟</a>
+							<a href="#">新款手表</a>
+							<a href="#">热销</a>
+							<a href="#">万表天猫旗舰店</a>
+							<a href="#">万表京东旗舰店</a>
+							<a href="#">手表资讯</a>
+							<a href="#">品牌大全</a>
+							<a href="#">关于我们></a>
+						</div>
+						<div class="bot02">
+							<p>万表网名表商城 版权所有 2008-2017&nbsp;ICP备案证书号:粤ICP备09108738号</a>&nbsp;网监备案:4401060103141</p>
+							<p>广州市万表科技股份有限公司 地址:广州市番禺区番禺大道北60-1号</p>
+							<p>Copyright 2008-2017 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.</p>
+						</div>
+						<div class="bot03">
+							<a href="#"><img src="imgweal/foot_bot01.png" /></a>
+							<a href="#"><img src="imgweal/foot_bot02.png" /></a>
+							<a href="#"><img src="imgweal/foot_bot03.png" /></a>
+							<a href="#"><img src="imgweal/foot_bot04.png" /></a>
+							<a href="#"><img src="imgweal/foot_bot05.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--倒计时-->
+	<script type="text/javascript">
+		function time(){
+		var time=new Date();
+		var dead=new Date(2017,8,10,0,0);
+		var t=dead-time;
+		
+		var d=parseInt(t/1000/60/60/24%365);
+		var h=parseInt(t/1000/60/60%24);
+		var m=parseInt(t/1000/60%60);
+		var s=parseInt(t/1000%60);
+		var ms=parseInt(t%1000);
+		$('.time #d').text(d);
+		$('.time #h').text(h);
+		$('.time #m').text(m);
+		$('.time #s').text(s);
+		$('.ti #ms').text(ms);
+		if(s<0){
+			$('.time').text('活动已结束');
+		}
+		
+	}	
+	setInterval(time,1);
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			function tabs(id, current, eveName) {
+				this.oWrap = $(id);
+				this.current = current;
+				console.log(this.current)
+				this.eveName = eveName;
+				this.oTitle = this.oWrap.find(".head-new ul li");
+				this.oContent = this.oWrap.find(".body-lpo ul");
+			}
+			tabs.prototype = {
+				constructor: tabs,
+				setActive: function(x) {
+					this.oTitle.removeClass("active");
+					this.oTitle.eq(x).addClass("active");
+				},
+				showContent: function(x) {
+					this.oContent.css("display", "none");
+					this.oContent.eq(x).css("display", "block");
+				},
+				init: function() {
+					var self = this;
+					$.each(this.oTitle, function(i, item) {
+						$(this).attr("index", i);
+						if(self.eveName == "hover") {
+							$(this).on("mouseover", function() {
+								self.setActive($(this).attr("index"));
+								self.showContent($(this).attr("index"));
+							})
+						} else {
+							$(this).click(function() {
+								//隐藏标题样式
+								self.setActive($(this).attr("index"));
+								//隐藏内容
+								self.showContent($(this).attr("index"));
+							})
+						}
+					})
+					//默认显示选项卡
+					if(self.current) {
+						console.log(self.current);
+						self.setActive(self.current);
+						self.showContent(self.current);
+					}
+				}
+			}
+			new tabs("#tab1", 0, "hover").init();
+			new tabs("#tab2", 2, "click").init();
+		})
+	</script>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#list").Validform({
+				ajaxPost: true,
+				tiptype: 3,
+
+			});
+			$("#list1").Validform({
+				ajaxPost: true,
+				tiptype: 3,
+
+			});
+		});
+		$(".body-lpo ul li").eq(1).find("th").css("width","340px").css("height","50px")
+		$(".body-lpo ul li").eq(2).find("th").css("width","300px").css("height","50px")
+		
+	</script>
+
+</html>

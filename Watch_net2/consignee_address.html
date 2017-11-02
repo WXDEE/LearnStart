@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/my_order.css" />
+		<link rel="stylesheet" type="text/css" href="css/user-center.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobileCSS.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my_order.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Validform_vl5.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/consignee_address.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mobileJS.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<!--右侧悬浮栏-->
+		<div class="suspend">
+			<a class="clearfix" href="shopCar.html">
+				<div class="sus_left fl">
+					购物车
+				</div>
+				<div class="sus_right fl">
+					<i class="ikon_sus suspend01"></i>
+				</div>
+			</a>
+			<a class="clearfix" href="#">
+				<div class="sus_left fl">
+					建议有奖
+				</div>
+				<div class="sus_right fl">
+					<i class="ikon_sus suspend02"></i>
+				</div>
+			</a>
+			<a class="clearfix" href="#header_top">
+				<div class="sus_left fl">
+					返回顶部
+				</div>
+				<div class="sus_right fl">
+					<i class="ikon_sus suspend03"></i>
+				</div>
+			</a>
+		</div>
+		<div class="header" id="header_top">
+			<div class="top_contain relative">
+				<div class="container">
+					<ul class="clearfix">
+						<a href="#">
+							<li class="fr">English</li>
+						</a>
+						<a href="#">
+							<li class="fr">服务专线</li>
+						</a>
+						<a href="#">
+							<li class="fr">办理信用卡</li>
+						</a>
+						<a href="#">
+							<li class="fr">手机万表</li>
+						</a>
+						<a href="user-center.html">
+							<li class="fr">我的订单</li>
+						</a>
+						<a href="register.html">
+							<li class="fr">注册（即送50元）</li>
+						</a>
+						<a href="login.html">
+							<li class="fr">登录</li>
+						</a>
+					</ul>
+				</div>
+				<!--手机万表-->
+				<div class="phone_watch">
+					<div class="img">
+						<img src="mobile_img/head01.jpg" />
+					</div>
+					<div class="txt">
+						万表商城APP
+					</div>
+				</div>
+			</div>
+			<div class="mid_contain container clearfix">
+				<div class="fl">
+					<i class="ikon1 ikon_logo"></i>
+				</div>
+				<div class="fl">
+					<img src="mobile_img/149421866385797.gif" />
+				</div>
+				<a href="shopCar.html">
+					<div class="shop_car fr clearfix">
+						<div class="fl">
+							<i class="ikon2 ikon_car"></i>
+						</div>
+						<div class="txt fl">
+							购物车
+						</div>
+					</div>
+				</a>
+				<div class="search fr clearfix relative">
+					<div class="fl">
+						<i class="ikon2 ikon_search"></i>
+					</div>
+					<input type="text" value="" placeholder="搜索 品牌/系列/型号" />
+					<button type="button">搜索</button>
+				</div>
+			</div>
+			<div class="bot_contain container clearfix relative">
+				<a href="index.html">
+					<div class="all_list fl">
+						<div class="fl">
+							<i class="ikon1 ikon_all"></i>
+						</div>
+						<div class="txt fl">
+							&nbsp;&nbsp;&nbsp;&nbsp;首页
+						</div>
+					</div>
+				</a>
+				<ul class="fl clearfix">
+					<a href="shopping center.html">
+						<li class="fl">选表中心</li>
+					</a>
+					<a href="service.html">
+						<li class="fl">名匠维修</li>
+					</a>
+					<a href="world.html">
+						<li class="fl">全球购表</li>
+					</a>
+					<a href="6.flashPurchase.html">
+						<li class="fl">闪购特惠</li>
+					</a>
+					<a href="weal.html">
+						<li class="fl">会员福利</li>
+					</a>
+					<a href="#">
+						<li class="fl">线下体验</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+
+			<div class="clearfix">
+				<!--头部-->
+				<div class="head">
+					<div class="msg box clearfix">
+						<div class="msg_border fl">
+							<a href="index.html">
+								<strong>首页</strong>
+							</a>
+						</div>
+						<div class="position fl">></div>
+						<a href="user_center.html">
+							<div class="head_my fl">我的万表</div>
+						</a>
+						<div class="position1 fl">></div>
+						<div class="my_order fl">收货地址</div>
+					</div>
+					<div class="line"></div>
+				</div>
+				<!--左边侧边栏-->
+				<div class="left box fl">
+					<div class="mine"></div>
+					<div class="floor">
+						<div class="t clearfix">
+							<div class="pic fpic fl"></div>
+							<div class="msg fl"><b>交易管理</b></div>
+						</div>
+						<div class="c">
+							<ul>
+								<li>
+									<a href="my_order.html"><span>我的订单</span></a>
+								</li>
+								<li>
+									<a href="#"><span>我的预售（0）</span></a>
+								</li>
+								<li>
+									<a href="#">
+										<p class="now_page"><b>></b>&nbsp; <i>收货地址</i></p>
+									</a>
+								</li>
+								<li>
+									<a href="#"><span>礼品卡</span></a>
+								</li>
+								<li>
+									<a href="#"><span>现金券/优惠券</span></a>
+								</li>
+								<li>
+									<a href="#"><span>中奖纪录</span></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="floor">
+						<div class="t clearfix">
+							<div class="pic fpic1 fl"></div>
+							<div class="msg fl"><b>账户管理</b></div>
+						</div>
+						<div class="c">
+							<ul>
+								<li>
+									<a href="personal.html"><span>个人资料</span></a>
+								</li>
+								<li>
+									<a href="pswd.html"><span>修改密码</span></a>
+								</li>
+								<li>
+									<a href="#"><span>我的收藏</span></a>
+								</li>
+								<li>
+									<a href="#"><span>浏览历史</span></a>
+								</li>
+								<li>
+									<a href="#"><span>为我推荐</span></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="floor">
+						<div class="t clearfix">
+							<div class="pic fpic2 fl"></div>
+							<div class="msg fl"><b>积分管理</b></div>
+						</div>
+						<div class="c">
+							<ul>
+								<li>
+									<a href="#"><span>我的积分</span></a>
+								</li>
+								<li>
+									<a href="#"><span>积分细则</span></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="floor">
+						<div class="t clearfix">
+							<div class="pic fpic3 fl"></div>
+							<div class="msg fl"><b>消息管理</b></div>
+						</div>
+						<div class="c">
+							<ul>
+								<li>
+									<a href="#"><span>购买咨询</span></a>
+								</li>
+								<li>
+									<a href="#"><span>我的评论</span></a>
+								</li>
+								<li>
+									<a href="#"><span>我的投稿</span></a>
+								</li>
+								<li>
+									<a href="#"><span>我的消息</span></a>
+								</li>
+								<li>
+									<a href="#"><span>促销通知</span></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="floor">
+						<div class="t clearfix">
+							<div class="pic fpic4 fl"></div>
+							<div class="msg fl"><b>万表会员</b></div>
+						</div>
+						<div class="c">
+							<ul>
+								<li>
+									<a href="#"><span>会员简介</span></a>
+								</li>
+								<li>
+									<a class="quit" href="#"><span>退出登录</span></a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<!--右边部分-->
+				<div class="right fl">
+					<div class="headbox clearfix">
+						<div class="msg fl"><b>收货地址</b></div>
+					</div>
+					<div class="had">
+						<b>已有收货地址</b>
+					</div>
+					<div id="new" class="msg_border relative clearfix">
+						<div class="box01">
+						<div class="msg msg0 fl">收货人</div>
+						<div class="msg msg0 fl">所在地区</div>
+						<div class="msg msg0 fl">详细地址</div>
+						
+							<div class="msg msg0 fl">邮编</div>
+							<div class="msg msg0 fl">电话/手机</div>
+							<div class="msg msg0 fl">操作</div>
+						
+						
+						</div>
+						
+						<div class="line"></div>
+						<!--<div class="box02">
+						<div class="msg msg0 fl">收货人</div>
+						<div class="msg msg0 fl">所在地区</div>
+						<div class="msg msg0 fl">详细地址</div>
+						
+							<div class="msg msg0 fl">邮编</div>
+							<div class="msg msg0 fl">电话/手机</div>
+							<div class="msg msg0 fl">
+								<a class="del" href="#">删除</a>
+								</div>
+							<div class="msg1 fl">
+								<input type="radio" name="" id="" value="" />
+								默认地址
+							</div>
+					
+						
+						</div>-->
+						<input class="new" type="button" name="" id="" value="新增收货地址" />
+
+					</div>
+					<!--表单-->
+					<form action="" class="newbox">
+						<ul class="clearfix">
+							<li class="clearfix">
+								<span class="fl">
+							<i class="fl">*</i>
+							收货人姓名：
+							</span>
+								<input class="fl name" type="text" name="" id="" value="" datatype="s2-4" errormsg="请输入真实姓名！" />
+							</li>
+							<li class="choose">
+								请选择城市
+							</li>
+							<li class="bigform relative clearfix">
+								<span class="fl">
+							<i class="fl">*</i>
+							省/市/区：
+							</span>
+								<select class="select1 select0">
+									<option title="0">请选择</option>
+									<option title="1">山东</option>
+									<option title="2">湖北</option>
+									<option title="3">青海</option>
+									<option title="4">河北</option>
+									<option title="4">北京</option>
+									<option title="4">上海</option>
+								</select>
+								<select class="select2 select0" title="1">
+									<option>请选择</option>
+									<option>济南</option>
+									<option>烟台</option>
+									<option>威海</option>
+									<option>青岛</option>
+									<option>聊城</option>
+									<option>潍坊</option>
+								</select>
+								<select class="select3 select0" title="1">
+									<option>请选择</option>
+									<option>市中区</option>
+									<option>天桥区</option>
+									<option>历下区</option>
+									<option>历城区</option>
+									<option>槐荫区</option>
+								</select>
+								
+							<li class="address clearfix">
+								<span class="fl">
+							<i class="fl">*</i>
+							详细地址：
+							</span>
+								<input class="address1 fl" type="text" name="" id="" value="" datatype="s" errormsg="请输入正确的地址！" />
+							</li>
+							<li class="email1 clearfix">
+								<span class="fl ema">
+							邮政编码：
+							</span>
+								<input class="ema1 fl" type="text" name="" id="" value="" datatype="p" errormsg="请输入正确的邮政编码！" />
+							</li>
+							<li class="phone clearfix">
+								<span class="msg fl">
+							电话：
+							</span>
+
+								<input class="fl" type="text" name="" id="" value="" datatype="n4-4" errormsg="请输入正确的电话号！" />
+								<span class="line fl">-</span>
+								<input class=" input fl" type="text" name="" id="" value="" datatype="n4-4" errormsg="请输入正确的电话号！" />
+								<span class="line fl">-</span>
+								<input class="fl" type="text" name="" id="" value="" datatype="n3-3" errormsg="请输入正确的电话号！" />
+							</li>
+							<li class="phone clearfix">
+								<span class="msg fl">
+							手机：
+							</span>
+								<input class="iphone fl" type="text" name="" id="" value="" datatype="m" errormsg="请输入正确的手机号！" />
+							</li>
+							<span class="checkbox clearfix">
+							<input class="check fl" type="checkbox" name="" id="" value="" />
+						<label>如果您是送朋友，可点此另填接收短信通知的手机号，以保持惊喜哦</label>
+						</span>
+							<input class="phonenum" type="text" placeholder="接收订单状态短信手机号" name="" id="" value="" />
+							<li class="email1 clearfix">
+								<span class="fl">
+							电子邮箱：
+							</span>
+								<input class="fl" type="text" name="" id="" value="" datatype="e" errormsg="输入格式不正确！" />
+							</li>
+
+						</ul>
+						<div class="set clearfix fl">
+							<span class="fl">
+							设为默认：
+							</span>
+							<input class="alone fl" type="checkbox" name="" id="" value="" />
+						</div>
+
+						<div class="keepbox clearfix">
+							<input class="keep fl" type="submit" name="" id="btn" value="保存地址" />
+							<span class="throw fl"><b>取消</b></span></div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer">
+			<div class="red_line">
+				<div class="container clearfix">
+					<a href="#">
+						<i class="ikon_red red01"></i> 正品保障
+					</a>
+					<a href="#">
+						<i class="ikon_red red02"></i> 免息分期
+					</a>
+					<a href="#">
+						<i class="ikon_red red03"></i> 全球联保
+					</a>
+					<a href="#">
+						<i class="ikon_red red04"></i> 假一赔三
+					</a>
+					<a href="#">
+						<i class="ikon_red red05"></i> 终身售后
+					</a>
+				</div>
+			</div>
+			<div class="foot_mid container clearfix">
+				<div class="con_left fl">
+					<p class="p1">客服电话</p>
+					<p class="p2">400-883-2688</p>
+					<p class="p3">外呼号码 020-83931899</p>
+					<p class="p4">
+						<a href="#">选购咨询</a>
+						<a href="#">售后咨询</a>
+					</p>
+				</div>
+				<div class="con_mid fl clearfix">
+					<dl>
+						<dt>新手</dt>
+						<dd>
+							<a href="#">注册新会员</a>
+							<a href="#">如何订购</a>
+							<a href="#">正品保障</a>
+							<a href="#">常见手表问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付</dt>
+						<dd>
+							<a href="#">支付方式</a>
+							<a href="#">分期付款</a>
+							<a href="#">发票说明</a>
+							<a href="#">支付问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送</dt>
+						<dd>
+							<a href="#">包裹签收</a>
+							<a href="#">配送方式</a>
+							<a href="#">配送说明</a>
+							<a href="#">自提流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>保障</dt>
+						<dd>
+							<a href="#">服务承诺</a>
+							<a href="#">价格保护</a>
+							<a href="#">七天退换说明</a>
+							<a href="#">保修说明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>帮助</dt>
+						<dd>
+							<a href="#">商务合作</a>
+							<a href="#">分销加盟</a>
+							<a href="#">严正声明</a>
+							<a href="#">人才招聘</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="con_code fl code01">
+					<div class="code_head">
+						<ul class="clearfix">
+							<li class="code_in fl">万表官方微博</li>
+							<li class="fl">万表世界订阅号</li>
+						</ul>
+					</div>
+					<div class="code_img display">
+						<p class="p1"><img src="mobile_img/code01.png" /></p>
+						<p class="p2">关注领100元现金券</p>
+					</div>
+					<div class="code_img">
+						<p class="p1"><img src="mobile_img/code02.png" /></p>
+						<p class="p2">全球买表 国内保修</p>
+					</div>
+				</div>
+				<div class="con_code fl code02">
+					<div class="code_head">
+						<ul class="clearfix">
+							<li class="code_in fl">万表微信服务号</li>
+							<li class="fl">万表微信资讯号</li>
+						</ul>
+					</div>
+					<div class="code_img display">
+						<p class="p1"><img src="mobile_img/code03.png" /></p>
+						<p class="p2">每周推送打折促销活动信息</p>
+					</div>
+					<div class="code_img">
+						<p class="p1"><img src="mobile_img/code04.png" /></p>
+						<p class="p2">每日推送手表干货文章</p>
+					</div>
+				</div>
+			</div>
+			<div class="foot_bot">
+				<div class="bot01 container">
+					<a href="#">万表网app</a>
+					<a href="#">万表全球购</a>
+					<a href="#">网站联盟</a>
+					<a href="#">新款手表</a>
+					<a href="#">热销</a>
+					<a href="#">万表天猫旗舰店</a>
+					<a href="#">万表京东旗舰店</a>
+					<a href="#">手表资讯</a>
+					<a href="#">品牌大全</a>
+					<a href="#">关于我们></a>
+				</div>
+				<div class="bot02">
+					<p>万表网名表商城 版权所有 2008-2017&nbsp;ICP备案证书号:粤ICP备09108738号</a>&nbsp;网监备案:4401060103141</p>
+					<p>广州市万表科技股份有限公司 地址:广州市番禺区番禺大道北60-1号</p>
+					<p>Copyright 2008-2017 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.</p>
+				</div>
+				<div class="bot03">
+					<a href="#"><img src="mobile_img/foot_bot01.png" /></a>
+					<a href="#"><img src="mobile_img/foot_bot02.png" /></a>
+					<a href="#"><img src="mobile_img/foot_bot03.png" /></a>
+					<a href="#"><img src="mobile_img/foot_bot04.png" /></a>
+					<a href="#"><img src="mobile_img/foot_bot05.png" /></a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+
+</html>
