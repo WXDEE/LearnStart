@@ -30,7 +30,7 @@ $(function () {
 			if($(this).prop("checked"))
 				num++;
 		})
-		if(num == $check.length) {
+		if(num == $check.length && $check.length!=0) {
 			$checkAll.prop("checked", true);
 		} else {
 			$checkAll.prop("checked", false);
